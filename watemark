@@ -1,7 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -28,7 +24,7 @@ local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
 local epick2 = Instance.new("ImageLabel")
 local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
 local sounds = Instance.new("Sound")
-
+ScreenGui.ResetOnSpawn = false
 --Properties:
 sounds.Parent = ScreenGui
 sounds.SoundId = "rbxassetid://6042053626"
