@@ -1,264 +1,267 @@
+if not game.Players.LocalPlayer.PlayerGui:FindFirstChild("fnbyudefrjthheudhrgyhufthu") then
+	local ScreenGui = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
+	local TextLabel = Instance.new("TextLabel")
+	local infected = Instance.new("TextLabel")
+	local infected_2 = Instance.new("TextLabel")
+	local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+	local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+	local infected_3 = Instance.new("TextLabel")
+	local infected_4 = Instance.new("TextLabel")
+	local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+	local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+	local infected_5 = Instance.new("TextLabel")
+	local infected_6 = Instance.new("TextLabel")
+	local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+	local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+	local infected_7 = Instance.new("TextLabel")
+	local infected_8 = Instance.new("TextLabel")
+	local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+	local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+	local epickglasses = Instance.new("ImageLabel")
+	local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
+	local epick2 = Instance.new("ImageLabel")
+	local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
+	local sounds = Instance.new("Sound")
+	ScreenGui.ResetOnSpawn = false
+	--Properties: then
+	ScreenGui.Name = "fnbyudefrjthheudhrgyhufthu"
+	sounds.Parent = ScreenGui
+	sounds.SoundId = "rbxassetid://6042053626"
+	ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local infected = Instance.new("TextLabel")
-local infected_2 = Instance.new("TextLabel")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
-local infected_3 = Instance.new("TextLabel")
-local infected_4 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
-local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
-local infected_5 = Instance.new("TextLabel")
-local infected_6 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
-local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
-local infected_7 = Instance.new("TextLabel")
-local infected_8 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
-local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
-local epickglasses = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
-local epick2 = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
-local sounds = Instance.new("Sound")
-ScreenGui.ResetOnSpawn = false
---Properties:
-sounds.Parent = ScreenGui
-sounds.SoundId = "rbxassetid://6042053626"
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	Frame.Parent = ScreenGui
+	Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Frame.BorderSizePixel = 0
+	Frame.Position = UDim2.new(0.110601, 0, 0.0342671648, 0)
+	Frame.Size = UDim2.new(0.744798303, 0, 0.959237218, 0)
+	Frame.Visible = false
+	Frame.ZIndex = 500
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.110601, 0, 0.0342671648, 0)
-Frame.Size = UDim2.new(0.744798303, 0, 0.959237218, 0)
-Frame.Visible = false
-Frame.ZIndex = 500
+	UICorner.Parent = Frame
 
-UICorner.Parent = Frame
+	TextLabel.Parent = Frame
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.BorderSizePixel = 0
+	TextLabel.Position = UDim2.new(0.000832792313, 0, 0.0048490339, 0)
+	TextLabel.Size = UDim2.new(1.00000012, 0, 0.0673691332, 0)
+	TextLabel.Font = Enum.Font.SourceSans
+	TextLabel.Text = "Project Epick, made by epick, welcome friend :D (info on game)"
+	TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.TextScaled = true
+	TextLabel.TextSize = 14.000
+	TextLabel.TextWrapped = true
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.000832792313, 0, 0.0048490339, 0)
-TextLabel.Size = UDim2.new(1.00000012, 0, 0.0673691332, 0)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Project Epick, made by epick, welcome friend :D (info on game)"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
+	infected.Name = "infected?"
+	infected.Parent = Frame
+	infected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	infected.BackgroundTransparency = 1.000
+	infected.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	infected.BorderSizePixel = 0
+	infected.Position = UDim2.new(0, 0, 0.0872826129, 0)
+	infected.Size = UDim2.new(0, 87, 0, 50)
+	infected.Font = Enum.Font.SourceSans
+	infected.Text = "Infected:"
+	infected.TextColor3 = Color3.fromRGB(0, 0, 0)
+	infected.TextScaled = true
+	infected.TextSize = 14.000
+	infected.TextWrapped = true
 
-infected.Name = "infected?"
-infected.Parent = Frame
-infected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-infected.BackgroundTransparency = 1.000
-infected.BorderColor3 = Color3.fromRGB(0, 0, 0)
-infected.BorderSizePixel = 0
-infected.Position = UDim2.new(0, 0, 0.0872826129, 0)
-infected.Size = UDim2.new(0, 87, 0, 50)
-infected.Font = Enum.Font.SourceSans
-infected.Text = "Infected:"
-infected.TextColor3 = Color3.fromRGB(0, 0, 0)
-infected.TextScaled = true
-infected.TextSize = 14.000
-infected.TextWrapped = true
+	infected_2.Name = "infected?"
+	infected_2.Parent = infected
+	infected_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	infected_2.BackgroundTransparency = 1.000
+	infected_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	infected_2.BorderSizePixel = 0
+	infected_2.Position = UDim2.new(1.03999996, 0, -0.0127174379, 0)
+	infected_2.Size = UDim2.new(0, 200, 0, 50)
+	infected_2.Font = Enum.Font.SourceSans
+	infected_2.Text = "True"
+	infected_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+	infected_2.TextScaled = true
+	infected_2.TextSize = 14.000
+	infected_2.TextWrapped = true
 
-infected_2.Name = "infected?"
-infected_2.Parent = infected
-infected_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-infected_2.BackgroundTransparency = 1.000
-infected_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-infected_2.BorderSizePixel = 0
-infected_2.Position = UDim2.new(1.03999996, 0, -0.0127174379, 0)
-infected_2.Size = UDim2.new(0, 200, 0, 50)
-infected_2.Font = Enum.Font.SourceSans
-infected_2.Text = "True"
-infected_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-infected_2.TextScaled = true
-infected_2.TextSize = 14.000
-infected_2.TextWrapped = true
+	UIAspectRatioConstraint.Parent = infected_2
 
-UIAspectRatioConstraint.Parent = infected_2
+	UIAspectRatioConstraint_2.Parent = infected
 
-UIAspectRatioConstraint_2.Parent = infected
+	infected_3.Name = "infected?"
+	infected_3.Parent = Frame
+	infected_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	infected_3.BackgroundTransparency = 1.000
+	infected_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	infected_3.BorderSizePixel = 0
+	infected_3.Position = UDim2.new(0, 0, 0.166483507, 0)
+	infected_3.Size = UDim2.new(0, 87, 0, 50)
+	infected_3.Font = Enum.Font.SourceSans
+	infected_3.Text = "Version?"
+	infected_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+	infected_3.TextScaled = true
+	infected_3.TextSize = 14.000
+	infected_3.TextWrapped = true
 
-infected_3.Name = "infected?"
-infected_3.Parent = Frame
-infected_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-infected_3.BackgroundTransparency = 1.000
-infected_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-infected_3.BorderSizePixel = 0
-infected_3.Position = UDim2.new(0, 0, 0.166483507, 0)
-infected_3.Size = UDim2.new(0, 87, 0, 50)
-infected_3.Font = Enum.Font.SourceSans
-infected_3.Text = "Version?"
-infected_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-infected_3.TextScaled = true
-infected_3.TextSize = 14.000
-infected_3.TextWrapped = true
+	infected_4.Name = "infected?"
+	infected_4.Parent = infected_3
+	infected_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	infected_4.BackgroundTransparency = 1.000
+	infected_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	infected_4.BorderSizePixel = 0
+	infected_4.Position = UDim2.new(0.999769926, 0, -0.0127172852, 0)
+	infected_4.Size = UDim2.new(0, 200, 0, 50)
+	infected_4.Font = Enum.Font.SourceSans
+	infected_4.Text = "V 5.3 Gui"
+	infected_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+	infected_4.TextScaled = true
+	infected_4.TextSize = 14.000
+	infected_4.TextWrapped = true
 
-infected_4.Name = "infected?"
-infected_4.Parent = infected_3
-infected_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-infected_4.BackgroundTransparency = 1.000
-infected_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-infected_4.BorderSizePixel = 0
-infected_4.Position = UDim2.new(0.999769926, 0, -0.0127172852, 0)
-infected_4.Size = UDim2.new(0, 200, 0, 50)
-infected_4.Font = Enum.Font.SourceSans
-infected_4.Text = "V 5.3 Gui"
-infected_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-infected_4.TextScaled = true
-infected_4.TextSize = 14.000
-infected_4.TextWrapped = true
+	UIAspectRatioConstraint_3.Parent = infected_4
 
-UIAspectRatioConstraint_3.Parent = infected_4
+	UIAspectRatioConstraint_4.Parent = infected_3
 
-UIAspectRatioConstraint_4.Parent = infected_3
+	infected_5.Name = "infected?"
+	infected_5.Parent = Frame
+	infected_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	infected_5.BackgroundTransparency = 1.000
+	infected_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	infected_5.BorderSizePixel = 0
+	infected_5.Position = UDim2.new(0, 0, 0.247300729, 0)
+	infected_5.Size = UDim2.new(0, 87, 0, 50)
+	infected_5.Font = Enum.Font.SourceSans
+	infected_5.Text = "W.I.P?"
+	infected_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+	infected_5.TextScaled = true
+	infected_5.TextSize = 14.000
+	infected_5.TextWrapped = true
 
-infected_5.Name = "infected?"
-infected_5.Parent = Frame
-infected_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-infected_5.BackgroundTransparency = 1.000
-infected_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-infected_5.BorderSizePixel = 0
-infected_5.Position = UDim2.new(0, 0, 0.247300729, 0)
-infected_5.Size = UDim2.new(0, 87, 0, 50)
-infected_5.Font = Enum.Font.SourceSans
-infected_5.Text = "W.I.P?"
-infected_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-infected_5.TextScaled = true
-infected_5.TextSize = 14.000
-infected_5.TextWrapped = true
+	infected_6.Name = "infected?"
+	infected_6.Parent = infected_5
+	infected_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	infected_6.BackgroundTransparency = 1.000
+	infected_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	infected_6.BorderSizePixel = 0
+	infected_6.Position = UDim2.new(0.994942605, 0, -0.0127172852, 0)
+	infected_6.Size = UDim2.new(0, 200, 0, 50)
+	infected_6.Font = Enum.Font.SourceSans
+	infected_6.Text = "True"
+	infected_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+	infected_6.TextScaled = true
+	infected_6.TextSize = 14.000
+	infected_6.TextWrapped = true
 
-infected_6.Name = "infected?"
-infected_6.Parent = infected_5
-infected_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-infected_6.BackgroundTransparency = 1.000
-infected_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-infected_6.BorderSizePixel = 0
-infected_6.Position = UDim2.new(0.994942605, 0, -0.0127172852, 0)
-infected_6.Size = UDim2.new(0, 200, 0, 50)
-infected_6.Font = Enum.Font.SourceSans
-infected_6.Text = "True"
-infected_6.TextColor3 = Color3.fromRGB(0, 0, 0)
-infected_6.TextScaled = true
-infected_6.TextSize = 14.000
-infected_6.TextWrapped = true
+	UIAspectRatioConstraint_5.Parent = infected_6
 
-UIAspectRatioConstraint_5.Parent = infected_6
+	UIAspectRatioConstraint_6.Parent = infected_5
 
-UIAspectRatioConstraint_6.Parent = infected_5
+	infected_7.Name = "infected?"
+	infected_7.Parent = Frame
+	infected_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	infected_7.BackgroundTransparency = 1.000
+	infected_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	infected_7.BorderSizePixel = 0
+	infected_7.Position = UDim2.new(0.0102667194, 0, 0.908385694, 0)
+	infected_7.Size = UDim2.new(0, 87, 0, 50)
+	infected_7.Font = Enum.Font.SourceSans
+	infected_7.Text = "Created by?"
+	infected_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+	infected_7.TextScaled = true
+	infected_7.TextSize = 14.000
+	infected_7.TextWrapped = true
 
-infected_7.Name = "infected?"
-infected_7.Parent = Frame
-infected_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-infected_7.BackgroundTransparency = 1.000
-infected_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-infected_7.BorderSizePixel = 0
-infected_7.Position = UDim2.new(0.0102667194, 0, 0.908385694, 0)
-infected_7.Size = UDim2.new(0, 87, 0, 50)
-infected_7.Font = Enum.Font.SourceSans
-infected_7.Text = "Created by?"
-infected_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-infected_7.TextScaled = true
-infected_7.TextSize = 14.000
-infected_7.TextWrapped = true
+	infected_8.Name = "infected?"
+	infected_8.Parent = infected_7
+	infected_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	infected_8.BackgroundTransparency = 1.000
+	infected_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	infected_8.BorderSizePixel = 0
+	infected_8.Position = UDim2.new(1.15517151, 0, 0.127282709, 0)
+	infected_8.Size = UDim2.new(0, 194, 0, 75)
+	infected_8.Font = Enum.Font.SourceSans
+	infected_8.Text = "Epick thanks for using <3 - with love epick"
+	infected_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+	infected_8.TextScaled = true
+	infected_8.TextSize = 14.000
+	infected_8.TextWrapped = true
 
-infected_8.Name = "infected?"
-infected_8.Parent = infected_7
-infected_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-infected_8.BackgroundTransparency = 1.000
-infected_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-infected_8.BorderSizePixel = 0
-infected_8.Position = UDim2.new(1.15517151, 0, 0.127282709, 0)
-infected_8.Size = UDim2.new(0, 194, 0, 75)
-infected_8.Font = Enum.Font.SourceSans
-infected_8.Text = "Epick thanks for using <3 - with love epick"
-infected_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-infected_8.TextScaled = true
-infected_8.TextSize = 14.000
-infected_8.TextWrapped = true
+	UIAspectRatioConstraint_7.Parent = infected_8
+	UIAspectRatioConstraint_7.AspectRatio = 4.000
 
-UIAspectRatioConstraint_7.Parent = infected_8
-UIAspectRatioConstraint_7.AspectRatio = 4.000
+	UIAspectRatioConstraint_8.Parent = infected_7
 
-UIAspectRatioConstraint_8.Parent = infected_7
+	epickglasses.Name = "epick glasses"
+	epickglasses.Parent = ScreenGui
+	epickglasses.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	epickglasses.BackgroundTransparency = 1.000
+	epickglasses.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	epickglasses.BorderSizePixel = 0
+	epickglasses.Position = UDim2.new(-0.0135642737, 0, 0.820917547, 0)
+	epickglasses.Size = UDim2.new(0.138772771, 0, 0.178784028, 0)
+	epickglasses.ZIndex = 500
+	epickglasses.Image = "rbxassetid://1447924234"
 
-epickglasses.Name = "epick glasses"
-epickglasses.Parent = ScreenGui
-epickglasses.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-epickglasses.BackgroundTransparency = 1.000
-epickglasses.BorderColor3 = Color3.fromRGB(0, 0, 0)
-epickglasses.BorderSizePixel = 0
-epickglasses.Position = UDim2.new(-0.0135642737, 0, 0.820917547, 0)
-epickglasses.Size = UDim2.new(0.138772771, 0, 0.178784028, 0)
-epickglasses.ZIndex = 500
-epickglasses.Image = "rbxassetid://1447924234"
+	UIAspectRatioConstraint_9.Parent = epickglasses
 
-UIAspectRatioConstraint_9.Parent = epickglasses
+	epick2.Name = "epick2"
+	epick2.Parent = ScreenGui
+	epick2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	epick2.BackgroundTransparency = 1.000
+	epick2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	epick2.BorderSizePixel = 0
+	epick2.Position = UDim2.new(0, 0, 0.85071528, 0)
+	epick2.Size = UDim2.new(0.100000001, 0, 0.150000006, 0)
+	epick2.ZIndex = 399
+	epick2.Image = "rbxassetid://11687089808"
 
-epick2.Name = "epick2"
-epick2.Parent = ScreenGui
-epick2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-epick2.BackgroundTransparency = 1.000
-epick2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-epick2.BorderSizePixel = 0
-epick2.Position = UDim2.new(0, 0, 0.85071528, 0)
-epick2.Size = UDim2.new(0.100000001, 0, 0.150000006, 0)
-epick2.ZIndex = 399
-epick2.Image = "rbxassetid://11687089808"
+	UIAspectRatioConstraint_10.Parent = epick2
 
-UIAspectRatioConstraint_10.Parent = epick2
+	-- Scripts:
 
--- Scripts:
+	local function IEIRGU_fake_script() -- Frame.LocalScript 
+		local script = Instance.new('LocalScript', Frame)
 
-local function IEIRGU_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-
-	script.Parent.TextLabel.Text = "Project Epick, made by epick, welcome ".. game.Players.LocalPlayer.Name .." :D"
-end
-coroutine.wrap(IEIRGU_fake_script)()
-local function OOJQX_fake_script() -- epickglasses.LocalScript 
-	local script = Instance.new('LocalScript', epickglasses)
-
-	gui_name = script.Parent
-	
-	while true do
-		wait(0.01)
-		gui_name.Rotation = gui_name.Rotation +3
+		script.Parent.TextLabel.Text = "Project Epick, made by epick, welcome ".. game.Players.LocalPlayer.Name .." :D"
 	end
-end
-coroutine.wrap(OOJQX_fake_script)()
-local function UQQJVNW_fake_script() -- epick2.LocalScript 
-	local script = Instance.new('LocalScript', epick2)
+	coroutine.wrap(IEIRGU_fake_script)()
+	local function OOJQX_fake_script() -- epickglasses.LocalScript 
+		local script = Instance.new('LocalScript', epickglasses)
 
-	gui_name = script.Parent
-	
-	while true do
-		wait(0.01)
-		gui_name.Rotation = gui_name.Rotation +3
+		gui_name = script.Parent
+
+		while true do
+			wait(0.01)
+			gui_name.Rotation = gui_name.Rotation +3
+		end
 	end
-end
-coroutine.wrap(UQQJVNW_fake_script)()
-local function DQHONSF_fake_script() -- epick2.LocalScript 
-	local script = Instance.new('LocalScript', epick2)
+	coroutine.wrap(OOJQX_fake_script)()
+	local function UQQJVNW_fake_script() -- epick2.LocalScript 
+		local script = Instance.new('LocalScript', epick2)
 
-	script.Parent.MouseEnter:Connect(function()
-	script.Parent.Parent.Frame.Visible = true
-	sounds:Play()
-	end)
-	script.Parent.MouseLeave:Connect(function()
-		script.Parent.Parent.Frame.Visible = false
-	end)
-	
+		gui_name = script.Parent
+
+		while true do
+			wait(0.01)
+			gui_name.Rotation = gui_name.Rotation +3
+		end
+	end
+	coroutine.wrap(UQQJVNW_fake_script)()
+	local function DQHONSF_fake_script() -- epick2.LocalScript 
+		local script = Instance.new('LocalScript', epick2)
+
+		script.Parent.MouseEnter:Connect(function()
+			script.Parent.Parent.Frame.Visible = true
+			sounds:Play()
+		end)
+		script.Parent.MouseLeave:Connect(function()
+			script.Parent.Parent.Frame.Visible = false
+		end)
+
+	end
+	coroutine.wrap(DQHONSF_fake_script)()
+
 end
-coroutine.wrap(DQHONSF_fake_script)()
