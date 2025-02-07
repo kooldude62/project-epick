@@ -1,51 +1,69 @@
-if not game.Players.LocalPlayer.PlayerGui:FindFirstChild("logo") then
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local logo = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local datag2 = Instance.new("Frame")
 local Main = Instance.new("ImageLabel")
-local Orbit = Instance.new("ImageLabel")
 local Ring = Instance.new("ImageLabel")
 local Main2 = Instance.new("ImageLabel")
 local Outline = Instance.new("Frame")
-local olleh = Instance.new("RemoteEvent")
+local Orbit = Instance.new("ImageLabel")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local sq = Instance.new("Sound")
+local snd = Instance.new("Sound")
+local fu = Instance.new("Sound")
+local tx = Instance.new("UIStroke")
+local border = Instance.new("UIStroke")
+border.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+border.Parent = Frame
+border.Thickness = 3
+tx.Parent = TextLabel_2
+tx.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+fu.SoundId = "rbxassetid://4499400560"
+fu.Parent = logo
+snd.SoundId = "rbxassetid://94760116094080"
+snd.Parent = logo
+sq.SoundId = "rbxassetid://9114123173"
+sq.Parent = logo
+datag2.Interactable = false
+--Properties:
 
-olleh.Parent = logo
-olleh.Name = "olleH"
 logo.Name = "logo"
 logo.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 logo.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 logo.ResetOnSpawn = false
 
-Frame.Parent = logo
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BackgroundTransparency = 1.000
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Size = UDim2.new(1, 0, 1, 0)
+datag2.Name = "datag2"
+datag2.Parent = logo
+datag2.Active = true
+datag2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+datag2.BackgroundTransparency = 1.000
+datag2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+datag2.BorderSizePixel = 0
+datag2.Size = UDim2.new(1, 0, 1, 0)
 
 Main.Name = "Main"
-Main.Parent = Frame
+Main.Parent = logo
+Main.Active = true
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.BackgroundTransparency = 1.000
 Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Main.Position = UDim2.new(0.5, -2000, 0.5, -50)
-Main.Size = UDim2.new(0, 100, 0, 100)
-Main.Image = "http://www.roblox.com/asset/?id=14973597235"
-
-Orbit.Name = "Orbit"
-Orbit.Parent = Main
-Orbit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Orbit.BackgroundTransparency = 1.000
-Orbit.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Orbit.Size = UDim2.new(0.239999995, 0, 0.239999995, 0)
-Orbit.ZIndex = 2
-Orbit.Image = "http://www.roblox.com/asset/?id=6208815613"
+Main.Position = UDim2.new(-1, 0, 0.400000006, 0)
+Main.Size = UDim2.new(0, 75, 0, 75)
+Main.Image = "rbxassetid://6582205525"
 
 Ring.Name = "Ring"
 Ring.Parent = Main
 Ring.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Ring.BackgroundTransparency = 1.000
 Ring.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Ring.Size = UDim2.new(1, 0, 1, 0)
+Ring.Position = UDim2.new(-0.119999997, 0, -0.13333334, 0)
+Ring.Size = UDim2.new(1.25, 0, 1.25, 0)
 Ring.Image = "rbxassetid://7102118272"
 
 Main2.Name = "Main2"
@@ -67,13 +85,69 @@ Outline.Size = UDim2.new(0.239999995, 0, 0.239999995, 0)
 Outline.Visible = false
 Outline.ZIndex = 2
 
-local function BSUD_fake_script() -- logo.LocalScript 
+Orbit.Name = "Orbit"
+Orbit.Parent = Main
+Orbit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Orbit.BackgroundTransparency = 1.000
+Orbit.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Orbit.Size = UDim2.new(0.239999995, 0, 0.239999995, 0)
+Orbit.ZIndex = 2
+Orbit.Image = "http://www.roblox.com/asset/?id=6208815613"
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(1.36000013, 0, 0, 0)
+Frame.Size = UDim2.new(0, 209, 0, 75)
+Frame.Visible = false
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(1, 0, 0.436666667, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "project epick: v4"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 0.426666677, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 0.436666667, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Infected game? (loading)"
+TextLabel_2.TextColor3 = Color3.fromRGB(110, 227, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.TextTransparency = 1.000
+
+-- Scripts:
+
+local function BQJC_fake_script() -- logo.LocalScript 
 	local script = Instance.new('LocalScript', logo)
 
-	activated = false
+	local activated = false
 	wait'.3'
-	hi = nil
-	connections = {
+	local hi = nil
+	local connections = {
 		['printconsole'] = {},
 		['loadstring'] = {},
 		['GetObjects'] = {},
@@ -101,10 +175,6 @@ local function BSUD_fake_script() -- logo.LocalScript
 	local lan = Instance.new('Animation'--[[, game:GetService'Players'.LocalPlayer.PlayerScripts--]])
 	--an.Parent = workspace --no
 	lan.AnimationId = string.rep('lugxdd', 999)
-	dupean = lan:Clone()
-	game:GetService'RunService'.RenderStepped:Connect(function()
-		dupean.AnimationId = string.reverse(lan.AnimationId)
-	end)
 	repeat wait'' until lan.AnimationId ~= string.rep('lugxdd', 999)
 	if lan.AnimationId:find('CEX:') then
 		lan.AnimationId = string.rep('YEAH YOU GOT IT BRO XDX', 1)
@@ -119,21 +189,10 @@ local function BSUD_fake_script() -- logo.LocalScript
 		pcall(function() game:GetService("StarterGui"):SetCoreGuiEnabled("Backpack",true) end)
 	end
 	repeat wait'' until activated == true
-	function ohok()
-		if lan.AnimationId ~= string.rep('fatxdd', 999) then
-			local animval = lan.AnimationId
-			if tostring(animval):find'<html>' then 
-				game:GetService'Players'.LocalPlayer:Kick'A web error occured! (if incorrectly kicked dm me)'
-				wait'3'
-				return
-			end
-			game:GetService'ReplicatedStorage'.DefaultChatSystemChatEvents.UnMutePlayerRequest:InvokeServer('SUP FAT MAN SCAT MAN BLACK AND WHITE AND BROWN MAN!!XZCzXC&&@#&$%&*@)#*&%(SSFD!', animval)
-			lan.AnimationId = string.rep('fatxdd', 999)
-		end
-	end
-	--spawn(ohok)
-	dupean.Changed:Connect(ohok)
-	
+
+	local newu = Instance.new('GuiMain', game:GetService'Players'.LocalPlayer:FindFirstChildOfClass'PlayerGui')
+	newu.ResetOnSpawn = false
+	newu.Name = 'Chat                        '
 	
 	game:GetService'ReplicatedStorage'.DefaultChatSystemChatEvents.UnMutePlayerRequest.OnClientInvoke = function(contype, datithas)
 		if connections[contype] then
@@ -154,11 +213,11 @@ local function BSUD_fake_script() -- logo.LocalScript
 	end
 	
 end
-coroutine.wrap(BSUD_fake_script)()
-local function SITHLI_fake_script() -- Frame.Orbi 
-	local script = Instance.new('LocalScript', Frame)
+coroutine.wrap(BQJC_fake_script)()
+local function WGJI_fake_script() -- datag2.Orbi 
+	local script = Instance.new('LocalScript', datag2)
 
-	local Main = script.Parent.Main
+	local Main = script.Parent.Parent.Main
 	local Main2 = Main.Main2
 	local Orbit = Main.Orbit
 	local Ring = Main.Ring
@@ -169,7 +228,7 @@ local function SITHLI_fake_script() -- Frame.Orbi
 	local WaitTime = 0.25
 	local LoadInfo = TweenInfo.new(WaitTime,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0)
 	local FlashInfo = TweenInfo.new(WaitTime,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,1,true,0)
-	local hk = Main.AbsoluteSize.X/2
+	local hk = Main.AbsoluteSize.X/1.6
 	local MainSize = Main.AbsoluteSize.X
 	local ls = Orbit.AbsoluteSize.X/2
 	local r = hk
@@ -214,7 +273,7 @@ local function SITHLI_fake_script() -- Frame.Orbi
 	end
 	spawn(function()
 		local deb = false
-		local hi = script.Parent.Main
+		local hi = script.Parent.Parent.Main
 		hi:TweenPosition(UDim2.new(0.5, -50,0.5, -50), Enum.EasingDirection.In)
 		wait'3'
 		hi:TweenPosition(UDim2.new(0, 12,1, -115), Enum.EasingDirection.Out)
@@ -226,16 +285,59 @@ local function SITHLI_fake_script() -- Frame.Orbi
 			end)
 		end)
 	end)
+	--DEMO CODE--
+
+	--DEMO CODE--
 	
 	while RS:wait() do
 		theta = theta < 360 and theta + step or 0
 		local x = (hk + r * math.cos(theta) - ls)
 		local y = (hk + r * math.sin(theta) - ls)
-		Orbit.Position = UDim2.new(x/MainSize,0,y/MainSize,0)
+		Orbit.Position = UDim2.new(x/MainSize,-7,y/MainSize,-8.5)
 		Ring.Rotation = Ring.Rotation < 360 and Ring.Rotation + rotvel or 0
 		RS:wait()
 	end
 end
-coroutine.wrap(SITHLI_fake_script)()
+coroutine.wrap(WGJI_fake_script)()
+local function LTWMX_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
 
+	snd:Play()
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Frame.Visible = true
+		fu:Play()
+	end)
+	
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Frame.Visible = false
+	end)
 end
+coroutine.wrap(LTWMX_fake_script)()
+local function JMBLZ_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	
+	while wait() do
+		if game.Workspace:FindFirstChild("key11111111111111111111111") then
+			wait()
+			TextLabel_2.Text = "Infected game? True"
+			tx = Color3.fromRGB(110, 227, 0) 
+			script.Parent.UIStroke.Color =  Color3.fromRGB(0, 120, 8)
+		else
+			wait()
+			TextLabel_2.Text = "Infected game? False"
+			tx = Color3.fromRGB(255, 29, 29)
+			script.Parent.UIStroke.Color = Color3.fromRGB(152, 24, 24)
+		end
+	end
+end
+coroutine.wrap(JMBLZ_fake_script)()
+local function HJEPUIS_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		sq:Play()
+	end)
+end
+coroutine.wrap(HJEPUIS_fake_script)()
