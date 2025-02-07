@@ -29,7 +29,7 @@ Main.BackgroundTransparency = 1.000
 Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Main.Position = UDim2.new(0.5, -2000, 0.5, -50)
 Main.Size = UDim2.new(0, 100, 0, 100)
-Main.Image = "http://www.roblox.com/asset/?id=13450748965"
+Main.Image = "http://www.roblox.com/asset/?id=14973597235"
 
 Orbit.Name = "Orbit"
 Orbit.Parent = Main
