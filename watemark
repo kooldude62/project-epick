@@ -2,7 +2,7 @@
 -- Version: 3.2
 
 -- Instances:
-
+if not game.Players.LocalPlayer.PlayerGui:FindFirstChild("logo") then
 local logo = Instance.new("ScreenGui")
 local datag2 = Instance.new("Frame")
 local Main = Instance.new("ImageLabel")
@@ -341,3 +341,4 @@ local function HJEPUIS_fake_script() -- TextButton.LocalScript
 	end)
 end
 coroutine.wrap(HJEPUIS_fake_script)()
+end
