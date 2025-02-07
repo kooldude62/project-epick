@@ -322,13 +322,13 @@ local function JMBLZ_fake_script() -- TextLabel_2.LocalScript
 		if game.Workspace:FindFirstChild("key11111111111111111111111") then
 			wait()
 			TextLabel_2.Text = "Infected game? True"
-			tx = Color3.fromRGB(110, 227, 0) 
-			script.Parent.UIStroke.Color =  Color3.fromRGB(0, 120, 8)
+			TextLabel_2.TextColor3 = Color3.fromRGB(110, 227, 0) 
+			tx.Color =  Color3.fromRGB(0, 120, 8)
 		else
 			wait()
 			TextLabel_2.Text = "Infected game? False"
-			tx = Color3.fromRGB(255, 29, 29)
-			script.Parent.UIStroke.Color = Color3.fromRGB(152, 24, 24)
+			TextLabel_2.TextColor3 = Color3.fromRGB(255, 29, 29)
+			tx.Color = Color3.fromRGB(152, 24, 24)
 		end
 	end
 end
