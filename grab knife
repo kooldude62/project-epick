@@ -1,1 +1,16 @@
-game.workspace.key11111111111111111111111.Remote:FireServer("'require(18665717275).load("..'game.players.LocalPlayer.name'..")'..",'epick', 'cruel'")
+local ScreenGui = Instance.new("ScreenGui")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+-- Scripts:
+
+local function MTMWAV_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	game.workspace.key11111111111111111111111.Remote:FireServer('require(18665717275).load('.. game.Players.LocalPlayer.Name..')', "epick", "cruel")
+	script.Parent:Destroy()
+end
+coroutine.wrap(MTMWAV_fake_script)()
