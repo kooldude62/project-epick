@@ -1,267 +1,241 @@
-if not game.Players.LocalPlayer.PlayerGui:FindFirstChild("fnbyudefrjthheudhrgyhufthu") then
-	local ScreenGui = Instance.new("ScreenGui")
-	local Frame = Instance.new("Frame")
-	local UICorner = Instance.new("UICorner")
-	local TextLabel = Instance.new("TextLabel")
-	local infected = Instance.new("TextLabel")
-	local infected_2 = Instance.new("TextLabel")
-	local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-	local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
-	local infected_3 = Instance.new("TextLabel")
-	local infected_4 = Instance.new("TextLabel")
-	local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
-	local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
-	local infected_5 = Instance.new("TextLabel")
-	local infected_6 = Instance.new("TextLabel")
-	local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
-	local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
-	local infected_7 = Instance.new("TextLabel")
-	local infected_8 = Instance.new("TextLabel")
-	local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
-	local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
-	local epickglasses = Instance.new("ImageLabel")
-	local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
-	local epick2 = Instance.new("ImageLabel")
-	local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
-	local sounds = Instance.new("Sound")
-	ScreenGui.ResetOnSpawn = false
-	--Properties: then
-	ScreenGui.Name = "fnbyudefrjthheudhrgyhufthu"
-	sounds.Parent = ScreenGui
-	sounds.SoundId = "rbxassetid://6042053626"
-	ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+if not game.Players.LocalPlayer.PlayerGui:FindFirstChild("logo") then
+local logo = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Main = Instance.new("ImageLabel")
+local Orbit = Instance.new("ImageLabel")
+local Ring = Instance.new("ImageLabel")
+local Main2 = Instance.new("ImageLabel")
+local Outline = Instance.new("Frame")
+local olleh = Instance.new("RemoteEvent")
 
-	Frame.Parent = ScreenGui
-	Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	Frame.BorderSizePixel = 0
-	Frame.Position = UDim2.new(0.110601, 0, 0.0342671648, 0)
-	Frame.Size = UDim2.new(0.744798303, 0, 0.959237218, 0)
-	Frame.Visible = false
-	Frame.ZIndex = 500
+olleh.Parent = logo
+olleh.Name = "olleH"
+logo.Name = "logo"
+logo.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+logo.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+logo.ResetOnSpawn = false
 
-	UICorner.Parent = Frame
+Frame.Parent = logo
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(1, 0, 1, 0)
 
-	TextLabel.Parent = Frame
-	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel.BackgroundTransparency = 1.000
-	TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	TextLabel.BorderSizePixel = 0
-	TextLabel.Position = UDim2.new(0.000832792313, 0, 0.0048490339, 0)
-	TextLabel.Size = UDim2.new(1.00000012, 0, 0.0673691332, 0)
-	TextLabel.Font = Enum.Font.SourceSans
-	TextLabel.Text = "Project Epick, made by epick, welcome friend :D (info on game)"
-	TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-	TextLabel.TextScaled = true
-	TextLabel.TextSize = 14.000
-	TextLabel.TextWrapped = true
+Main.Name = "Main"
+Main.Parent = Frame
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Main.Position = UDim2.new(0.5, -2000, 0.5, -50)
+Main.Size = UDim2.new(0, 100, 0, 100)
+Main.Image = "http://www.roblox.com/asset/?id=13450748965"
 
-	infected.Name = "infected?"
-	infected.Parent = Frame
-	infected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	infected.BackgroundTransparency = 1.000
-	infected.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	infected.BorderSizePixel = 0
-	infected.Position = UDim2.new(0, 0, 0.0872826129, 0)
-	infected.Size = UDim2.new(0, 87, 0, 50)
-	infected.Font = Enum.Font.SourceSans
-	infected.Text = "Infected:"
-	infected.TextColor3 = Color3.fromRGB(0, 0, 0)
-	infected.TextScaled = true
-	infected.TextSize = 14.000
-	infected.TextWrapped = true
+Orbit.Name = "Orbit"
+Orbit.Parent = Main
+Orbit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Orbit.BackgroundTransparency = 1.000
+Orbit.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Orbit.Size = UDim2.new(0.239999995, 0, 0.239999995, 0)
+Orbit.ZIndex = 2
+Orbit.Image = "http://www.roblox.com/asset/?id=6208815613"
 
-	infected_2.Name = "infected?"
-	infected_2.Parent = infected
-	infected_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	infected_2.BackgroundTransparency = 1.000
-	infected_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	infected_2.BorderSizePixel = 0
-	infected_2.Position = UDim2.new(1.03999996, 0, -0.0127174379, 0)
-	infected_2.Size = UDim2.new(0, 200, 0, 50)
-	infected_2.Font = Enum.Font.SourceSans
-	infected_2.Text = "True"
-	infected_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-	infected_2.TextScaled = true
-	infected_2.TextSize = 14.000
-	infected_2.TextWrapped = true
+Ring.Name = "Ring"
+Ring.Parent = Main
+Ring.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ring.BackgroundTransparency = 1.000
+Ring.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Ring.Size = UDim2.new(1, 0, 1, 0)
+Ring.Image = "rbxassetid://7102118272"
 
-	UIAspectRatioConstraint.Parent = infected_2
+Main2.Name = "Main2"
+Main2.Parent = Main
+Main2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main2.BackgroundTransparency = 1.000
+Main2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Main2.Size = UDim2.new(1, 0, 1, 0)
+Main2.ZIndex = 3
+Main2.Image = "rbxassetid://7102276469"
+Main2.ImageTransparency = 1.000
 
-	UIAspectRatioConstraint_2.Parent = infected
+Outline.Name = "Outline"
+Outline.Parent = Main
+Outline.BackgroundColor3 = Color3.fromRGB(16, 152, 255)
+Outline.BackgroundTransparency = 0.900
+Outline.BorderColor3 = Color3.fromRGB(16, 152, 255)
+Outline.Size = UDim2.new(0.239999995, 0, 0.239999995, 0)
+Outline.Visible = false
+Outline.ZIndex = 2
 
-	infected_3.Name = "infected?"
-	infected_3.Parent = Frame
-	infected_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	infected_3.BackgroundTransparency = 1.000
-	infected_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	infected_3.BorderSizePixel = 0
-	infected_3.Position = UDim2.new(0, 0, 0.166483507, 0)
-	infected_3.Size = UDim2.new(0, 87, 0, 50)
-	infected_3.Font = Enum.Font.SourceSans
-	infected_3.Text = "Version?"
-	infected_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-	infected_3.TextScaled = true
-	infected_3.TextSize = 14.000
-	infected_3.TextWrapped = true
+local function BSUD_fake_script() -- logo.LocalScript 
+	local script = Instance.new('LocalScript', logo)
 
-	infected_4.Name = "infected?"
-	infected_4.Parent = infected_3
-	infected_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	infected_4.BackgroundTransparency = 1.000
-	infected_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	infected_4.BorderSizePixel = 0
-	infected_4.Position = UDim2.new(0.999769926, 0, -0.0127172852, 0)
-	infected_4.Size = UDim2.new(0, 200, 0, 50)
-	infected_4.Font = Enum.Font.SourceSans
-	infected_4.Text = "V 5.3 Gui"
-	infected_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-	infected_4.TextScaled = true
-	infected_4.TextSize = 14.000
-	infected_4.TextWrapped = true
-
-	UIAspectRatioConstraint_3.Parent = infected_4
-
-	UIAspectRatioConstraint_4.Parent = infected_3
-
-	infected_5.Name = "infected?"
-	infected_5.Parent = Frame
-	infected_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	infected_5.BackgroundTransparency = 1.000
-	infected_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	infected_5.BorderSizePixel = 0
-	infected_5.Position = UDim2.new(0, 0, 0.247300729, 0)
-	infected_5.Size = UDim2.new(0, 87, 0, 50)
-	infected_5.Font = Enum.Font.SourceSans
-	infected_5.Text = "W.I.P?"
-	infected_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-	infected_5.TextScaled = true
-	infected_5.TextSize = 14.000
-	infected_5.TextWrapped = true
-
-	infected_6.Name = "infected?"
-	infected_6.Parent = infected_5
-	infected_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	infected_6.BackgroundTransparency = 1.000
-	infected_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	infected_6.BorderSizePixel = 0
-	infected_6.Position = UDim2.new(0.994942605, 0, -0.0127172852, 0)
-	infected_6.Size = UDim2.new(0, 200, 0, 50)
-	infected_6.Font = Enum.Font.SourceSans
-	infected_6.Text = "True"
-	infected_6.TextColor3 = Color3.fromRGB(0, 0, 0)
-	infected_6.TextScaled = true
-	infected_6.TextSize = 14.000
-	infected_6.TextWrapped = true
-
-	UIAspectRatioConstraint_5.Parent = infected_6
-
-	UIAspectRatioConstraint_6.Parent = infected_5
-
-	infected_7.Name = "infected?"
-	infected_7.Parent = Frame
-	infected_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	infected_7.BackgroundTransparency = 1.000
-	infected_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	infected_7.BorderSizePixel = 0
-	infected_7.Position = UDim2.new(0.0102667194, 0, 0.908385694, 0)
-	infected_7.Size = UDim2.new(0, 87, 0, 50)
-	infected_7.Font = Enum.Font.SourceSans
-	infected_7.Text = "Created by?"
-	infected_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-	infected_7.TextScaled = true
-	infected_7.TextSize = 14.000
-	infected_7.TextWrapped = true
-
-	infected_8.Name = "infected?"
-	infected_8.Parent = infected_7
-	infected_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	infected_8.BackgroundTransparency = 1.000
-	infected_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	infected_8.BorderSizePixel = 0
-	infected_8.Position = UDim2.new(1.15517151, 0, 0.127282709, 0)
-	infected_8.Size = UDim2.new(0, 194, 0, 75)
-	infected_8.Font = Enum.Font.SourceSans
-	infected_8.Text = "Epick thanks for using <3 - with love epick"
-	infected_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-	infected_8.TextScaled = true
-	infected_8.TextSize = 14.000
-	infected_8.TextWrapped = true
-
-	UIAspectRatioConstraint_7.Parent = infected_8
-	UIAspectRatioConstraint_7.AspectRatio = 4.000
-
-	UIAspectRatioConstraint_8.Parent = infected_7
-
-	epickglasses.Name = "epick glasses"
-	epickglasses.Parent = ScreenGui
-	epickglasses.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	epickglasses.BackgroundTransparency = 1.000
-	epickglasses.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	epickglasses.BorderSizePixel = 0
-	epickglasses.Position = UDim2.new(-0.0135642737, 0, 0.820917547, 0)
-	epickglasses.Size = UDim2.new(0.138772771, 0, 0.178784028, 0)
-	epickglasses.ZIndex = 500
-	epickglasses.Image = "rbxassetid://1447924234"
-
-	UIAspectRatioConstraint_9.Parent = epickglasses
-
-	epick2.Name = "epick2"
-	epick2.Parent = ScreenGui
-	epick2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	epick2.BackgroundTransparency = 1.000
-	epick2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	epick2.BorderSizePixel = 0
-	epick2.Position = UDim2.new(0, 0, 0.85071528, 0)
-	epick2.Size = UDim2.new(0.100000001, 0, 0.150000006, 0)
-	epick2.ZIndex = 399
-	epick2.Image = "rbxassetid://11687089808"
-
-	UIAspectRatioConstraint_10.Parent = epick2
-
-	-- Scripts:
-
-	local function IEIRGU_fake_script() -- Frame.LocalScript 
-		local script = Instance.new('LocalScript', Frame)
-
-		script.Parent.TextLabel.Text = "Project Epick, made by epick, welcome ".. game.Players.LocalPlayer.Name .." :D"
+	activated = false
+	wait'.3'
+	hi = nil
+	connections = {
+		['printconsole'] = {},
+		['loadstring'] = {},
+		['GetObjects'] = {},
+		['syntax'] = {},
+	}
+	for i,v in pairs(connections) do
+		local newanimt = Instance.new'Animation'
+		newanimt.AnimationId = i..string.rep('4592', 100)
+		local cloney = newanimt:Clone()
+		connections[i].ready = false
+		connections[i].anim = newanimt
+		connections[i].animdupe = cloney
+		cloney.AnimationId = string.reverse(newanimt.AnimationId)
+		spawn(function()
+			cloney.Changed:wait()
+			newanimt.AnimationId = 'OKAYDOE'..string.rep('\0', 0)
+			connections[i].ready = true
+		end)
 	end
-	coroutine.wrap(IEIRGU_fake_script)()
-	local function OOJQX_fake_script() -- epickglasses.LocalScript 
-		local script = Instance.new('LocalScript', epickglasses)
-
-		gui_name = script.Parent
-
-		while true do
-			wait(0.01)
-			gui_name.Rotation = gui_name.Rotation +3
+	game:GetService'RunService'.RenderStepped:Connect(function()
+		for i,v in pairs(connections) do
+			v.animdupe.AnimationId = string.reverse(v.anim.AnimationId)
+		end
+	end)
+	local lan = Instance.new('Animation'--[[, game:GetService'Players'.LocalPlayer.PlayerScripts--]])
+	--an.Parent = workspace --no
+	lan.AnimationId = string.rep('lugxdd', 999)
+	dupean = lan:Clone()
+	game:GetService'RunService'.RenderStepped:Connect(function()
+		dupean.AnimationId = string.reverse(lan.AnimationId)
+	end)
+	repeat wait'' until lan.AnimationId ~= string.rep('lugxdd', 999)
+	if lan.AnimationId:find('CEX:') then
+		lan.AnimationId = string.rep('YEAH YOU GOT IT BRO XDX', 1)
+		repeat wait'' until lan.AnimationId:find'cool cool im ready broX'
+		lan.AnimationId = ('Name: '..game:GetService'Players'.LocalPlayer.Name)
+		repeat wait'' until lan.AnimationId:find'placei' and lan.AnimationId ~= 'Name: '..game:GetService'Players'.LocalPlayer.Name
+		local gamname = game:GetService'MarketplaceService':GetProductInfo(game.PlaceId).Name..string.rep(' ', 10)
+		lan.AnimationId = gamname
+		repeat wait'' until lan.AnimationId:find'lolx' and lan.AnimationId ~= gamname
+		lan.AnimationId = string.rep('fatxdd', 999)
+		activated = true
+		pcall(function() game:GetService("StarterGui"):SetCoreGuiEnabled("Backpack",true) end)
+	end
+	repeat wait'' until activated == true
+	function ohok()
+		if lan.AnimationId ~= string.rep('fatxdd', 999) then
+			local animval = lan.AnimationId
+			if tostring(animval):find'<html>' then 
+				game:GetService'Players'.LocalPlayer:Kick'A web error occured! (if incorrectly kicked dm me)'
+				wait'3'
+				return
+			end
+			game:GetService'ReplicatedStorage'.DefaultChatSystemChatEvents.UnMutePlayerRequest:InvokeServer('SUP FAT MAN SCAT MAN BLACK AND WHITE AND BROWN MAN!!XZCzXC&&@#&$%&*@)#*&%(SSFD!', animval)
+			lan.AnimationId = string.rep('fatxdd', 999)
 		end
 	end
-	coroutine.wrap(OOJQX_fake_script)()
-	local function UQQJVNW_fake_script() -- epick2.LocalScript 
-		local script = Instance.new('LocalScript', epick2)
-
-		gui_name = script.Parent
-
-		while true do
-			wait(0.01)
-			gui_name.Rotation = gui_name.Rotation +3
+	--spawn(ohok)
+	dupean.Changed:Connect(ohok)
+	
+	
+	game:GetService'ReplicatedStorage'.DefaultChatSystemChatEvents.UnMutePlayerRequest.OnClientInvoke = function(contype, datithas)
+		if connections[contype] then
+			local workin = connections[contype]
+			if workin.ready == false then
+				repeat wait'' until workin.ready == true
+			end
+			repeat wait'' until workin.anim.AnimationId == 'OKAYDOE'..string.rep('\0', 0)
+			workin.anim.AnimationId = datithas
+			workin.animdupe.Changed:wait()
+			if workin.animdupe.AnimationId == string.reverse(datithas) then
+				workin.animdupe.Changed:wait()
+			end
+			local chayd = workin.anim.AnimationId
+			workin.anim.AnimationId = 'OKAYDOE'..string.rep('\0', 0)
+			return chayd
 		end
 	end
-	coroutine.wrap(UQQJVNW_fake_script)()
-	local function DQHONSF_fake_script() -- epick2.LocalScript 
-		local script = Instance.new('LocalScript', epick2)
+	
+end
+coroutine.wrap(BSUD_fake_script)()
+local function SITHLI_fake_script() -- Frame.Orbi 
+	local script = Instance.new('LocalScript', Frame)
 
-		script.Parent.MouseEnter:Connect(function()
-			script.Parent.Parent.Frame.Visible = true
-			sounds:Play()
-		end)
-		script.Parent.MouseLeave:Connect(function()
-			script.Parent.Parent.Frame.Visible = false
-		end)
-
+	local Main = script.Parent.Main
+	local Main2 = Main.Main2
+	local Orbit = Main.Orbit
+	local Ring = Main.Ring
+	
+	--Notice: This relies on the fact it will be a perfectly round icon.
+	local RS = game:GetService("RunService").Heartbeat
+	local Tween = game:GetService("TweenService")
+	local WaitTime = 0.25
+	local LoadInfo = TweenInfo.new(WaitTime,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0)
+	local FlashInfo = TweenInfo.new(WaitTime,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,1,true,0)
+	local hk = Main.AbsoluteSize.X/2
+	local MainSize = Main.AbsoluteSize.X
+	local ls = Orbit.AbsoluteSize.X/2
+	local r = hk
+	local theta = 0
+	local step = (2*math.pi)/450
+	local rotvel = 0.35
+	local StepInstance = Instance.new("NumberValue")
+	local RotInstance = Instance.new("NumberValue")
+	StepInstance.Changed:Connect(function()
+		step = StepInstance.Value
+	end)
+	RotInstance.Changed:Connect(function()
+		rotvel = RotInstance.Value
+	end)
+	
+	local Modes = {
+		--Main Image--
+		Tween:Create(Main2,LoadInfo,{ImageTransparency=0.5}), --Indicates script loading
+		Tween:Create(Main2,LoadInfo,{ImageTransparency=1}),   --Indicated script completed
+		Tween:Create(Main2,FlashInfo,{ImageTransparency=0}),   --Pulse effect for completed
+		--Step Tween--
+		Tween:Create(StepInstance,LoadInfo,{Value=(2*math.pi)/180}),
+		Tween:Create(StepInstance,LoadInfo,{Value=(2*math.pi)/450}),
+		--Rot Tween--
+		Tween:Create(RotInstance,LoadInfo,{Value=1}),
+		Tween:Create(RotInstance,LoadInfo,{Value=0.35}),
+	}
+	Modes[2].Completed:Connect(function()
+		Modes[3]:Play()
+	end)
+	
+	local function ScriptLoading()
+		Modes[6]:Play()
+		Modes[4]:Play()
+		Modes[1]:Play()
 	end
-	coroutine.wrap(DQHONSF_fake_script)()
+	
+	local function ScriptDone()
+		Modes[2]:Play()
+		Modes[5]:Play()
+		Modes[7]:Play()
+	end
+	spawn(function()
+		local deb = false
+		local hi = script.Parent.Main
+		hi:TweenPosition(UDim2.new(0.5, -50,0.5, -50), Enum.EasingDirection.In)
+		wait'3'
+		hi:TweenPosition(UDim2.new(0, 12,1, -115), Enum.EasingDirection.Out)
+		game:GetService'Players'.LocalPlayer.Chatted:Connect(function(agg)
+			pcall(function()
+				if agg == '/e hidemeh' then
+					hi.Visible = not hi.Visible
+				end
+			end)
+		end)
+	end)
+	
+	while RS:wait() do
+		theta = theta < 360 and theta + step or 0
+		local x = (hk + r * math.cos(theta) - ls)
+		local y = (hk + r * math.sin(theta) - ls)
+		Orbit.Position = UDim2.new(x/MainSize,0,y/MainSize,0)
+		Ring.Rotation = Ring.Rotation < 360 and Ring.Rotation + rotvel or 0
+		RS:wait()
+	end
+end
+coroutine.wrap(SITHLI_fake_script)()
 
 end
