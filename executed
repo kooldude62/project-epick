@@ -1,0 +1,81 @@
+
+local Converted = {
+	["_script"] = Instance.new("ScreenGui");
+	["_Frame"] = Instance.new("Frame");
+	["_TextLabel"] = Instance.new("TextLabel");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_UICorner"] = Instance.new("UICorner");
+	["_UIStroke"] = Instance.new("UIStroke");
+}
+
+-- Properties:
+
+Converted["_script"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_script"].Name = "script"
+Converted["_script"].Parent = game.Players.LocalPlayer.PlayerGui
+
+Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Frame"].BackgroundTransparency = 1
+Converted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Frame"].BorderSizePixel = 0
+Converted["_Frame"].Position = UDim2.new(0.786445022, 0, 0.0283075087, 0)
+Converted["_Frame"].Size = UDim2.new(0.213128656, 0, 0.937425494, 0)
+Converted["_Frame"].Parent = Converted["_script"]
+
+Converted["_TextLabel"].Font = Enum.Font.SourceSans
+Converted["_TextLabel"].Text = "Script executed"
+Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].TextScaled = true
+Converted["_TextLabel"].TextSize = 14
+Converted["_TextLabel"].TextWrapped = true
+Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel"].BorderSizePixel = 0
+Converted["_TextLabel"].Position = UDim2.new(0, 0, 0.911504745, 0)
+Converted["_TextLabel"].Size = UDim2.new(1.00199997, 0, 0.0884951577, 0)
+Converted["_TextLabel"].Parent = Converted["_Frame"]
+
+Converted["_UICorner"].Parent = Converted["_TextLabel"]
+
+Converted["_UIStroke"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke"].Thickness = 3
+Converted["_UIStroke"].Parent = Converted["_TextLabel"]
+
+-- Fake Module Scripts:
+
+local fake_module_scripts = {}
+
+
+-- Fake Local Scripts:
+
+local function QEZLHCV_fake_script() -- Fake Script: StarterGui.script.Frame.TextLabel.LocalScript
+	local script = Instance.new("LocalScript")
+	script.Name = "LocalScript"
+	script.Parent = Converted["_TextLabel"]
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local frame = script.Parent
+
+	frame.Size = UDim2.new(0.188, 0,0.071, 0)
+
+
+	local function tweenFrame()
+		frame:TweenSize(UDim2.new(0.188, 0,0.071, 0),Enum.EasingDirection.In,Enum.EasingStyle.Quint,0.15)
+		wait(0.13)
+		Converted["_script"]:Destroy()
+	end
+	frame.Visible = true
+	frame:TweenSize(UDim2.new(1.002, 0,0.088, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Back,0.2)
+	wait(3)
+	tweenFrame()
+end
+
+coroutine.wrap(QEZLHCV_fake_script)()
