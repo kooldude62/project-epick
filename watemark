@@ -1,459 +1,341 @@
-if not game.Players.LocalPlayer.PlayerGui:FindFirstChild("hi") then
-local Converted = {
-	["_hi"] = Instance.new("ScreenGui");
-	["_LocalScript"] = Instance.new("LocalScript");
-	["_ImageLabel"] = Instance.new("ImageButton");
-	["_LocalScript1"] = Instance.new("LocalScript");
-	["_thingy"] = Instance.new("Frame");
-	["_TextLabel1"] = Instance.new("TextLabel");
-	["_TextLabel2"] = Instance.new("TextLabel");
-	["_TextLabel3"] = Instance.new("TextLabel");
-	["_status"] = Instance.new("TextLabel");
-	["_Script"] = Instance.new("Script");
-	["_R15TOR6"] = Instance.new("TextButton");
-	["_R6"] = Instance.new("ModuleScript");
-	["_DefaultCharacter"] = Instance.new("Model");
-	["_Head"] = Instance.new("Part");
-	["_Climbing"] = Instance.new("Sound");
-	["_CharacterSoundEvent"] = Instance.new("RemoteEvent");
-	["_Swimming"] = Instance.new("Sound");
-	["_CharacterSoundEvent1"] = Instance.new("RemoteEvent");
-	["_Running"] = Instance.new("Sound");
-	["_CharacterSoundEvent2"] = Instance.new("RemoteEvent");
-	["_Splash"] = Instance.new("Sound");
-	["_CharacterSoundEvent3"] = Instance.new("RemoteEvent");
-	["_Landing"] = Instance.new("Sound");
-	["_CharacterSoundEvent4"] = Instance.new("RemoteEvent");
-	["_Jumping"] = Instance.new("Sound");
-	["_CharacterSoundEvent5"] = Instance.new("RemoteEvent");
-	["_FreeFalling"] = Instance.new("Sound");
-	["_CharacterSoundEvent6"] = Instance.new("RemoteEvent");
-	["_Died"] = Instance.new("Sound");
-	["_CharacterSoundEvent7"] = Instance.new("RemoteEvent");
-	["_GettingUp"] = Instance.new("Sound");
-	["_CharacterSoundEvent8"] = Instance.new("RemoteEvent");
-	["_Climbing1"] = Instance.new("Sound");
-	["_CharacterSoundEvent9"] = Instance.new("RemoteEvent");
-	["_Swimming1"] = Instance.new("Sound");
-	["_CharacterSoundEvent10"] = Instance.new("RemoteEvent");
-	["_Running1"] = Instance.new("Sound");
-	["_CharacterSoundEvent11"] = Instance.new("RemoteEvent");
-	["_Splash1"] = Instance.new("Sound");
-	["_CharacterSoundEvent12"] = Instance.new("RemoteEvent");
-	["_Landing1"] = Instance.new("Sound");
-	["_CharacterSoundEvent13"] = Instance.new("RemoteEvent");
-	["_Jumping1"] = Instance.new("Sound");
-	["_CharacterSoundEvent14"] = Instance.new("RemoteEvent");
-	["_FreeFalling1"] = Instance.new("Sound");
-	["_CharacterSoundEvent15"] = Instance.new("RemoteEvent");
-	["_Died1"] = Instance.new("Sound");
-	["_CharacterSoundEvent16"] = Instance.new("RemoteEvent");
-	["_GettingUp1"] = Instance.new("Sound");
-	["_CharacterSoundEvent17"] = Instance.new("RemoteEvent");
-	["_CharacterSoundEvent18"] = Instance.new("RemoteEvent");
-	["_Mesh"] = Instance.new("SpecialMesh");
-	["_HairAttachment"] = Instance.new("Attachment");
-	["_HatAttachment"] = Instance.new("Attachment");
-	["_FaceFrontAttachment"] = Instance.new("Attachment");
-	["_FaceCenterAttachment"] = Instance.new("Attachment");
-	["_GettingUp2"] = Instance.new("Sound");
-	["_CharacterSoundEvent19"] = Instance.new("RemoteEvent");
-	["_Died2"] = Instance.new("Sound");
-	["_CharacterSoundEvent20"] = Instance.new("RemoteEvent");
-	["_FreeFalling2"] = Instance.new("Sound");
-	["_CharacterSoundEvent21"] = Instance.new("RemoteEvent");
-	["_Jumping2"] = Instance.new("Sound");
-	["_CharacterSoundEvent22"] = Instance.new("RemoteEvent");
-	["_Landing2"] = Instance.new("Sound");
-	["_CharacterSoundEvent23"] = Instance.new("RemoteEvent");
-	["_Splash2"] = Instance.new("Sound");
-	["_CharacterSoundEvent24"] = Instance.new("RemoteEvent");
-	["_Running2"] = Instance.new("Sound");
-	["_CharacterSoundEvent25"] = Instance.new("RemoteEvent");
-	["_Swimming2"] = Instance.new("Sound");
-	["_CharacterSoundEvent26"] = Instance.new("RemoteEvent");
-	["_Climbing2"] = Instance.new("Sound");
-	["_CharacterSoundEvent27"] = Instance.new("RemoteEvent");
-	["_face"] = Instance.new("Decal");
-	["_Torso"] = Instance.new("Part");
-	["_CharacterSoundEvent28"] = Instance.new("RemoteEvent");
-	["_roblox"] = Instance.new("Decal");
-	["_NeckAttachment"] = Instance.new("Attachment");
-	["_BodyFrontAttachment"] = Instance.new("Attachment");
-	["_BodyBackAttachment"] = Instance.new("Attachment");
-	["_LeftCollarAttachment"] = Instance.new("Attachment");
-	["_RightCollarAttachment"] = Instance.new("Attachment");
-	["_WaistFrontAttachment"] = Instance.new("Attachment");
-	["_WaistCenterAttachment"] = Instance.new("Attachment");
-	["_WaistBackAttachment"] = Instance.new("Attachment");
-	["_Right Shoulder"] = Instance.new("Motor6D");
-	["_Left Shoulder"] = Instance.new("Motor6D");
-	["_Right Hip"] = Instance.new("Motor6D");
-	["_Left Hip"] = Instance.new("Motor6D");
-	["_Neck"] = Instance.new("Motor6D");
-	["_Left Arm"] = Instance.new("Part");
-	["_CharacterSoundEvent29"] = Instance.new("RemoteEvent");
-	["_LeftShoulderAttachment"] = Instance.new("Attachment");
-	["_LeftGripAttachment"] = Instance.new("Attachment");
-	["_Right Arm"] = Instance.new("Part");
-	["_CharacterSoundEvent30"] = Instance.new("RemoteEvent");
-	["_RightShoulderAttachment"] = Instance.new("Attachment");
-	["_RightGripAttachment"] = Instance.new("Attachment");
-	["_Left Leg"] = Instance.new("Part");
-	["_CharacterSoundEvent31"] = Instance.new("RemoteEvent");
-	["_LeftFootAttachment"] = Instance.new("Attachment");
-	["_Right Leg"] = Instance.new("Part");
-	["_CharacterSoundEvent32"] = Instance.new("RemoteEvent");
-	["_RightFootAttachment"] = Instance.new("Attachment");
-	["_Humanoid"] = Instance.new("Humanoid");
-	["_Animator"] = Instance.new("Animator");
-	["_Respawn"] = Instance.new("Script");
-	["_Jump"] = Instance.new("LocalScript");
-	["_HumanoidRootPart"] = Instance.new("Part");
-	["_CharacterSoundEvent33"] = Instance.new("RemoteEvent");
-	["_RootAttachment"] = Instance.new("Attachment");
-	["_RootJoint"] = Instance.new("Motor6D");
-	["_Sound"] = Instance.new("Script");
-	["_LocalSound"] = Instance.new("LocalScript");
-	["_Health"] = Instance.new("Script");
-	["_Animate"] = Instance.new("LocalScript");
-	["_idle"] = Instance.new("StringValue");
-	["_Animation1"] = Instance.new("Animation");
-	["_Weight"] = Instance.new("NumberValue");
-	["_Animation2"] = Instance.new("Animation");
-	["_Weight1"] = Instance.new("NumberValue");
-	["_walk"] = Instance.new("StringValue");
-	["_WalkAnim"] = Instance.new("Animation");
-	["_run"] = Instance.new("StringValue");
-	["_RunAnim"] = Instance.new("Animation");
-	["_jump"] = Instance.new("StringValue");
-	["_JumpAnim"] = Instance.new("Animation");
-	["_climb"] = Instance.new("StringValue");
-	["_ClimbAnim"] = Instance.new("Animation");
-	["_toolnone"] = Instance.new("StringValue");
-	["_ToolNoneAnim"] = Instance.new("Animation");
-	["_fall"] = Instance.new("StringValue");
-	["_FallAnim"] = Instance.new("Animation");
-	["_sit"] = Instance.new("StringValue");
-	["_SitAnim"] = Instance.new("Animation");
-	["_ScaleDampeningPercent"] = Instance.new("NumberValue");
-	["_LocalScript2"] = Instance.new("LocalScript");
-	["_RemoteEvent"] = Instance.new("RemoteEvent");
-	["_Script1"] = Instance.new("Script");
-}
+if not game.Players.LocalPlayer.PlayerGui:FindFirstChild("logo") then
+	local logo = Instance.new("ScreenGui")
+	local datag2 = Instance.new("Frame")
+	local Main = Instance.new("ImageLabel")
+	local Ring = Instance.new("ImageLabel")
+	local Main2 = Instance.new("ImageLabel")
+	local Outline = Instance.new("Frame")
+	local Orbit = Instance.new("ImageLabel")
+	local Frame = Instance.new("Frame")
+	local TextLabel = Instance.new("TextLabel")
+	local TextLabel_2 = Instance.new("TextLabel")
+	local TextButton = Instance.new("TextButton")
+	local sq = Instance.new("Sound")
+	local snd = Instance.new("Sound")
+	local fu = Instance.new("Sound")
+	local tx = Instance.new("UIStroke")
+	local border = Instance.new("UIStroke")
+	border.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+	border.Parent = Frame
+	border.Thickness = 3
+	tx.Parent = TextLabel_2
+	tx.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+	fu.SoundId = "rbxassetid://4499400560"
+	fu.Parent = logo
+	snd.SoundId = "rbxassetid://94760116094080"
+	snd.Parent = logo
+	sq.SoundId = "rbxassetid://9114123173"
+	sq.Parent = logo
+	datag2.Interactable = false
+	--Properties:
 
--- Properties:
+	logo.Name = "logo"
+	logo.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	logo.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	logo.ResetOnSpawn = false
 
-Converted["_hi"].ResetOnSpawn = false
-Converted["_hi"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_hi"].Name = "hi"
-Converted["_hi"].Parent = game.Players.LocalPlayer.PlayerGui
+	datag2.Name = "datag2"
+	datag2.Parent = logo
+	datag2.Active = true
+	datag2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	datag2.BackgroundTransparency = 1.000
+	datag2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	datag2.BorderSizePixel = 0
+	datag2.Size = UDim2.new(1, 0, 1, 0)
 
-Converted["_ImageLabel"].Image = "http://www.roblox.com/asset/?id=87162794"
-Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel"].BackgroundTransparency = 1
-Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_ImageLabel"].Position = UDim2.new(-0.0710000023, 0, 0.43599999, 0)
-Converted["_ImageLabel"].Size = UDim2.new(0, 99, 0, 100)
-Converted["_ImageLabel"].Name = "ImageLabel"
-Converted["_ImageLabel"].Parent = Converted["_hi"]
+	Main.Name = "Main"
+	Main.Parent = logo
+	Main.Active = true
+	Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Main.BackgroundTransparency = 1.000
+	Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	Main.Position = UDim2.new(-1, 0, 0.400000006, 0)
+	Main.Size = UDim2.new(0, 75, 0, 75)
+	Main.Image = "rbxassetid://6582205525"
 
-Converted["_thingy"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_thingy"].BackgroundTransparency = 1
-Converted["_thingy"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_thingy"].Position = UDim2.new(0.0859375, 0, 0.793192863, 0)
-Converted["_thingy"].Size = UDim2.new(0, 306, 0, 100)
-Converted["_thingy"].Name = "thingy"
-Converted["_thingy"].Parent = Converted["_hi"]
+	Ring.Name = "Ring"
+	Ring.Parent = Main
+	Ring.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Ring.BackgroundTransparency = 1.000
+	Ring.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	Ring.Position = UDim2.new(-0.119999997, 0, -0.13333334, 0)
+	Ring.Size = UDim2.new(1.25, 0, 1.25, 0)
+	Ring.Image = "rbxassetid://7102118272"
 
-Converted["_TextLabel1"].Font = Enum.Font.SourceSansBold
-Converted["_TextLabel1"].Text = "Project Ligma by Harkinian and Unverified"
-Converted["_TextLabel1"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel1"].TextScaled = true
-Converted["_TextLabel1"].TextSize = 13
-Converted["_TextLabel1"].TextTransparency = 1
-Converted["_TextLabel1"].TextWrapped = true
-Converted["_TextLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel1"].BackgroundTransparency = 1
-Converted["_TextLabel1"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_TextLabel1"].Size = UDim2.new(0, 306, 0, 18)
-Converted["_TextLabel1"].Name = "TextLabel1"
-Converted["_TextLabel1"].Parent = Converted["_thingy"]
+	Main2.Name = "Main2"
+	Main2.Parent = Main
+	Main2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Main2.BackgroundTransparency = 1.000
+	Main2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	Main2.Size = UDim2.new(1, 0, 1, 0)
+	Main2.ZIndex = 3
+	Main2.Image = "rbxassetid://7102276469"
+	Main2.ImageTransparency = 1.000
 
-Converted["_TextLabel2"].Font = Enum.Font.SourceSansBold
-Converted["_TextLabel2"].Text = "Use the external program to execute scripts."
-Converted["_TextLabel2"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel2"].TextSize = 17
-Converted["_TextLabel2"].TextTransparency = 1
-Converted["_TextLabel2"].TextWrapped = true
-Converted["_TextLabel2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel2"].BackgroundTransparency = 1
-Converted["_TextLabel2"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_TextLabel2"].Position = UDim2.new(0, 0, 0.530000031, 0)
-Converted["_TextLabel2"].Size = UDim2.new(0, 306, 0, 23)
-Converted["_TextLabel2"].Name = "TextLabel2"
-Converted["_TextLabel2"].Parent = Converted["_thingy"]
+	Outline.Name = "Outline"
+	Outline.Parent = Main
+	Outline.BackgroundColor3 = Color3.fromRGB(16, 152, 255)
+	Outline.BackgroundTransparency = 0.900
+	Outline.BorderColor3 = Color3.fromRGB(16, 152, 255)
+	Outline.Size = UDim2.new(0.239999995, 0, 0.239999995, 0)
+	Outline.Visible = false
+	Outline.ZIndex = 2
 
-Converted["_TextLabel3"].Font = Enum.Font.SourceSansBold
-Converted["_TextLabel3"].Text = "Run scripts live without filthy modules or converting!"
-Converted["_TextLabel3"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel3"].TextSize = 16
-Converted["_TextLabel3"].TextTransparency = 1
-Converted["_TextLabel3"].TextWrapped = true
-Converted["_TextLabel3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel3"].BackgroundTransparency = 1
-Converted["_TextLabel3"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_TextLabel3"].BorderSizePixel = 0
-Converted["_TextLabel3"].Position = UDim2.new(0, 0, 0.180000007, 0)
-Converted["_TextLabel3"].Size = UDim2.new(0, 306, 0, 35)
-Converted["_TextLabel3"].Name = "TextLabel3"
-Converted["_TextLabel3"].Parent = Converted["_thingy"]
+	Orbit.Name = "Orbit"
+	Orbit.Parent = Main
+	Orbit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Orbit.BackgroundTransparency = 1.000
+	Orbit.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	Orbit.Size = UDim2.new(0.239999995, 0, 0.239999995, 0)
+	Orbit.ZIndex = 2
+	Orbit.Image = "http://www.roblox.com/asset/?id=6208815613"
 
-Converted["_status"].Font = Enum.Font.SourceSansBold
-Converted["_status"].Text = "Status: Injected"
-Converted["_status"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_status"].TextSize = 18
-Converted["_status"].TextTransparency = 1
-Converted["_status"].TextWrapped = true
-Converted["_status"].TextYAlignment = Enum.TextYAlignment.Bottom
-Converted["_status"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_status"].BackgroundTransparency = 1
-Converted["_status"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_status"].Position = UDim2.new(0, 0, 0.829999983, 0)
-Converted["_status"].Size = UDim2.new(0, 306, 0, 17)
-Converted["_status"].Name = "status"
-Converted["_status"].Parent = Converted["_thingy"]
+	Frame.Parent = Main
+	Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Frame.BorderSizePixel = 0
+	Frame.Position = UDim2.new(1.36000013, 0, 0, 0)
+	Frame.Size = UDim2.new(0, 209, 0, 75)
+	Frame.Visible = false
 
-Converted["_Script"].Parent = Converted["_status"]
+	TextLabel.Parent = Frame
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.BorderSizePixel = 0
+	TextLabel.Size = UDim2.new(1, 0, 0.436666667, 0)
+	TextLabel.Font = Enum.Font.SourceSans
+	TextLabel.Text = "project epick: v4"
+	TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.TextScaled = true
+	TextLabel.TextSize = 14.000
+	TextLabel.TextWrapped = true
 
-Converted["_R15TOR6"].Font = Enum.Font.SourceSansBold
-Converted["_R15TOR6"].Text = "R15 --> R6"
-Converted["_R15TOR6"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_R15TOR6"].TextSize = 23
-Converted["_R15TOR6"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_R15TOR6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_R15TOR6"].Position = UDim2.new(0.00800000131, 0, 0.729143023, 0)
-Converted["_R15TOR6"].Size = UDim2.new(0, 98, 0, 44)
-Converted["_R15TOR6"].Visible = false
-Converted["_R15TOR6"].Name = "R15TOR6"
-Converted["_R15TOR6"].Parent = Converted["_hi"]
+	TextLabel_2.Parent = Frame
+	TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel_2.BorderSizePixel = 0
+	TextLabel_2.Position = UDim2.new(0, 0, 0.426666677, 0)
+	TextLabel_2.Size = UDim2.new(1, 0, 0.436666667, 0)
+	TextLabel_2.Font = Enum.Font.SourceSans
+	TextLabel_2.Text = "Infected game? (loading)"
+	TextLabel_2.TextColor3 = Color3.fromRGB(110, 227, 0)
+	TextLabel_2.TextScaled = true
+	TextLabel_2.TextSize = 14.000
+	TextLabel_2.TextWrapped = true
 
--- Fake Module Scripts:
+	TextButton.Parent = Main
+	TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.BackgroundTransparency = 1.000
+	TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.BorderSizePixel = 0
+	TextButton.Size = UDim2.new(1, 0, 1, 0)
+	TextButton.Font = Enum.Font.SourceSans
+	TextButton.Text = ""
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextSize = 14.000
+	TextButton.TextTransparency = 1.000
 
-local fake_module_scripts = {}
+	-- Scripts:
 
-do -- Fake Module: StarterGui.hi.R15TOR6.R6
-	local script = Instance.new("ModuleScript")
-	script.Name = "R6"
-	script.Parent = Converted["_R15TOR6"]
-	local function module_script()
-		local R6Converter = {}
-		function R6Converter.load(Plr)
-			Plr = game.Players:WaitForChild(Plr)
-			local FalseChar = script:WaitForChild("DefaultCharacter"):Clone()
-			local PlayersCharacter = game.Players:GetCharacterAppearanceAsync(Plr.UserId):Clone()
-			local FaceID = (Plr.Character:WaitForChild("Head"):FindFirstChild("face") or {Texture = "http://www.roblox.com/asset/?id=144080495"}).Texture
-			local Accessories = {}
-			FalseChar:WaitForChild("Head"):WaitForChild("face").Texture = FaceID
-			FalseChar:SetPrimaryPartCFrame(Plr.Character:WaitForChild("HumanoidRootPart").CFrame)
-			for _,Prt in pairs(PlayersCharacter:GetDescendants()) do
-				if Prt:IsA("Accessory") or Prt:IsA("Hat") or Prt:IsA("BodyColors") or Prt:IsA("CharacterMesh")or Prt:IsA("Pants") or Prt:IsA("Shirt") or Prt:IsA("ShirtGraphic") or Prt:IsA("Tool") then
-					table.insert(Accessories,Prt:Clone())
+	local function BQJC_fake_script() -- logo.LocalScript 
+		local script = Instance.new('LocalScript', logo)
+
+		local activated = false
+		wait'.3'
+		local hi = nil
+		local connections = {
+			['printconsole'] = {},
+			['loadstring'] = {},
+			['GetObjects'] = {},
+			['syntax'] = {},
+		}
+		for i,v in pairs(connections) do
+			local newanimt = Instance.new'Animation'
+			newanimt.AnimationId = i..string.rep('4592', 100)
+			local cloney = newanimt:Clone()
+			connections[i].ready = false
+			connections[i].anim = newanimt
+			connections[i].animdupe = cloney
+			cloney.AnimationId = string.reverse(newanimt.AnimationId)
+			spawn(function()
+				cloney.Changed:wait()
+				newanimt.AnimationId = 'OKAYDOE'..string.rep('\0', 0)
+				connections[i].ready = true
+			end)
+		end
+		game:GetService'RunService'.RenderStepped:Connect(function()
+			for i,v in pairs(connections) do
+				v.animdupe.AnimationId = string.reverse(v.anim.AnimationId)
+			end
+		end)
+		local lan = Instance.new('Animation'--[[, game:GetService'Players'.LocalPlayer.PlayerScripts--]])
+		--an.Parent = workspace --no
+		lan.AnimationId = string.rep('lugxdd', 999)
+		repeat wait'' until lan.AnimationId ~= string.rep('lugxdd', 999)
+		if lan.AnimationId:find('CEX:') then
+			lan.AnimationId = string.rep('YEAH YOU GOT IT BRO XDX', 1)
+			repeat wait'' until lan.AnimationId:find'cool cool im ready broX'
+			lan.AnimationId = ('Name: '..game:GetService'Players'.LocalPlayer.Name)
+			repeat wait'' until lan.AnimationId:find'placei' and lan.AnimationId ~= 'Name: '..game:GetService'Players'.LocalPlayer.Name
+			local gamname = game:GetService'MarketplaceService':GetProductInfo(game.PlaceId).Name..string.rep(' ', 10)
+			lan.AnimationId = gamname
+			repeat wait'' until lan.AnimationId:find'lolx' and lan.AnimationId ~= gamname
+			lan.AnimationId = string.rep('fatxdd', 999)
+			activated = true
+			pcall(function() game:GetService("StarterGui"):SetCoreGuiEnabled("Backpack",true) end)
+		end
+		repeat wait'' until activated == true
+
+		local newu = Instance.new('GuiMain', game:GetService'Players'.LocalPlayer:FindFirstChildOfClass'PlayerGui')
+		newu.ResetOnSpawn = false
+		newu.Name = 'Chat                        '
+
+		game:GetService'ReplicatedStorage'.DefaultChatSystemChatEvents.UnMutePlayerRequest.OnClientInvoke = function(contype, datithas)
+			if connections[contype] then
+				local workin = connections[contype]
+				if workin.ready == false then
+					repeat wait'' until workin.ready == true
 				end
+				repeat wait'' until workin.anim.AnimationId == 'OKAYDOE'..string.rep('\0', 0)
+				workin.anim.AnimationId = datithas
+				workin.animdupe.Changed:wait()
+				if workin.animdupe.AnimationId == string.reverse(datithas) then
+					workin.animdupe.Changed:wait()
+				end
+				local chayd = workin.anim.AnimationId
+				workin.anim.AnimationId = 'OKAYDOE'..string.rep('\0', 0)
+				return chayd
 			end
-
-			for _,Prt in pairs(Plr.Character:GetChildren()) do
-				Prt:Destroy()
-			end
-			for _,Prt in pairs(FalseChar:GetChildren()) do
-				Prt.Parent = Plr.Character
-			end
-			for _,Prt in pairs(Accessories) do
-				Prt.Parent = Plr.Character
-			end
-
-
 		end
 
-		return R6Converter
-
 	end
-	fake_module_scripts[script] = module_script
-end
+	coroutine.wrap(BQJC_fake_script)()
+	local function WGJI_fake_script() -- datag2.Orbi 
+		local script = Instance.new('LocalScript', datag2)
 
--- Fake Local Scripts:
+		local Main = script.Parent.Parent.Main
+		local Main2 = Main.Main2
+		local Orbit = Main.Orbit
+		local Ring = Main.Ring
 
-local function BWHY_fake_script() -- Fake Script: StarterGui.hi.LocalScript
-	local script = Instance.new("LocalScript")
-	script.Name = "LocalScript"
-	script.Parent = Converted["_hi"]
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
+		--Notice: This relies on the fact it will be a perfectly round icon.
+		local RS = game:GetService("RunService").Heartbeat
+		local Tween = game:GetService("TweenService")
+		local WaitTime = 0.25
+		local LoadInfo = TweenInfo.new(WaitTime,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0)
+		local FlashInfo = TweenInfo.new(WaitTime,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,1,true,0)
+		local hk = Main.AbsoluteSize.X/1.6
+		local MainSize = Main.AbsoluteSize.X
+		local ls = Orbit.AbsoluteSize.X/2
+		local r = hk
+		local theta = 0
+		local step = (2*math.pi)/450
+		local rotvel = 0.35
+		local StepInstance = Instance.new("NumberValue")
+		local RotInstance = Instance.new("NumberValue")
+		StepInstance.Changed:Connect(function()
+			step = StepInstance.Value
+		end)
+		RotInstance.Changed:Connect(function()
+			rotvel = RotInstance.Value
+		end)
+
+		local Modes = {
+			--Main Image--
+			Tween:Create(Main2,LoadInfo,{ImageTransparency=0.5}), --Indicates script loading
+			Tween:Create(Main2,LoadInfo,{ImageTransparency=1}),   --Indicated script completed
+			Tween:Create(Main2,FlashInfo,{ImageTransparency=0}),   --Pulse effect for completed
+			--Step Tween--
+			Tween:Create(StepInstance,LoadInfo,{Value=(2*math.pi)/180}),
+			Tween:Create(StepInstance,LoadInfo,{Value=(2*math.pi)/450}),
+			--Rot Tween--
+			Tween:Create(RotInstance,LoadInfo,{Value=1}),
+			Tween:Create(RotInstance,LoadInfo,{Value=0.35}),
+		}
+		Modes[2].Completed:Connect(function()
+			Modes[3]:Play()
+		end)
+
+		local function ScriptLoading()
+			Modes[6]:Play()
+			Modes[4]:Play()
+			Modes[1]:Play()
 		end
-		return req(obj)
-	end
 
-	local info = script.Parent.thingy
-	local text1 = script.Parent.thingy.TextLabel1
-	local text2 = script.Parent.thingy.TextLabel3
-	local text3 = script.Parent.thingy.TextLabel2
-	local text4 = script.Parent.thingy.status
-
-
-	script.Parent.ImageLabel:TweenPosition(UDim2.new(0.461, 0,0.433, 0))
-	wait(2)
-	script.Parent.ImageLabel:TweenPosition(UDim2.new(0.008, 0,0.794, 0))
-	wait(1)
-	script.Parent.R15TOR6.Visible = true
-	wait(0.7)
-	script.Parent.thingy.BackgroundTransparency = 0.9
-	wait(0.1)
-	script.Parent.thingy.BackgroundTransparency = 0.8
-	wait(0.1)
-	script.Parent.thingy.BackgroundTransparency = 0.7
-	wait(0.1)
-	script.Parent.thingy.BackgroundTransparency = 0.6
-	wait(0.1)
-	script.Parent.thingy.BackgroundTransparency = 0.5
-	wait(0.1)
-	script.Parent.thingy.BackgroundTransparency = 0.4
-	wait(0.1)
-	script.Parent.thingy.BackgroundTransparency = 0.3
-	wait(0.1)
-	script.Parent.thingy.BackgroundTransparency = 0.2
-	wait(0.1)
-	script.Parent.thingy.BackgroundTransparency = 0.1
-	wait(0.1)
-	text1.TextTransparency = 0.9
-	wait(0.1)
-	text1.TextTransparency = 0.8
-	wait(0.1)
-	text1.TextTransparency = 0.7
-	wait(0.1)
-	text1.TextTransparency = 0.6
-	wait(0.1)
-	text1.TextTransparency = 0.5
-	wait(0.1)
-	text1.TextTransparency = 0.4
-	wait(0.1)
-	text1.TextTransparency = 0.3
-	wait(0.1)
-	text1.TextTransparency = 0.2
-	wait(0.1)
-	text1.TextTransparency = 0.1
-	wait(0.1)
-	text1.TextTransparency = 0
-	--separe bro
-	wait(0.1)
-	text2.TextTransparency = 0.9
-	wait(0.1)
-	text2.TextTransparency = 0.8
-	wait(0.1)
-	text2.TextTransparency = 0.7
-	wait(0.1)
-	text2.TextTransparency = 0.6
-	wait(0.1)
-	text2.TextTransparency = 0.5
-	wait(0.1)
-	text2.TextTransparency = 0.4
-	wait(0.1)
-	text2.TextTransparency = 0.3
-	wait(0.1)
-	text2.TextTransparency = 0.2
-	wait(0.1)
-	text2.TextTransparency = 0.1
-	wait(0.1)
-	text2.TextTransparency = 0
-	wait(0.1)
-	--separe
-	text3.TextTransparency = 0.9
-	wait(0.1)
-	text3.TextTransparency = 0.8
-	wait(0.1)
-	text3.TextTransparency = 0.7
-	wait(0.1)
-	text3.TextTransparency = 0.6
-	wait(0.1)
-	text3.TextTransparency = 0.5
-	wait(0.1)
-	text3.TextTransparency = 0.4
-	wait(0.1)
-	text3.TextTransparency = 0.3
-	wait(0.1)
-	text3.TextTransparency = 0.2
-	wait(0.1)
-	text3.TextTransparency = 0.1
-	wait(0.1)
-	text3.TextTransparency = 0
-	wait(0.1)
-	--separe
-	text4.TextTransparency = 0.9
-	wait(0.1)
-	text4.TextTransparency = 0.8
-	wait(0.1)
-	text4.TextTransparency = 0.7
-	wait(0.1)
-	text4.TextTransparency = 0.6
-	wait(0.1)
-	text4.TextTransparency = 0.5
-	wait(0.1)
-	text4.TextTransparency = 0.4
-	wait(0.1)
-	text4.TextTransparency = 0.3
-	wait(0.1)
-	text4.TextTransparency = 0.2
-	wait(0.1)
-	text4.TextTransparency = 0.1
-	wait(0.1)
-	text4.TextTransparency = 0
-
-
-
-
-
-end
-local function KUCMUHP_fake_script() -- Fake Script: StarterGui.hi.ImageLabel.LocalScript
-	local script = Instance.new("LocalScript")
-	script.Name = "LocalScript"
-	script.Parent = Converted["_ImageLabel"]
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
+		local function ScriptDone()
+			Modes[2]:Play()
+			Modes[5]:Play()
+			Modes[7]:Play()
 		end
-		return req(obj)
-	end
+		spawn(function()
+			local deb = false
+			local hi = script.Parent.Parent.Main
+			hi:TweenPosition(UDim2.new(0.5, -50,0.5, -50), Enum.EasingDirection.In)
+			wait'3'
+			hi:TweenPosition(UDim2.new(0, 12,1, -115), Enum.EasingDirection.Out)
+			game:GetService'Players'.LocalPlayer.Chatted:Connect(function(agg)
+				pcall(function()
+					if agg == '/e hidemeh' then
+						hi.Visible = not hi.Visible
+					end
+				end)
+			end)
+		end)
+		--DEMO CODE--
 
-	script.Parent.MouseButton1Click:Connect(function()
-		wait(0.1)
-		script.Parent.Parent.changelog.Visible = true
-		wait(0)
-		script.Parent.Parent.changelog:TweenPosition(UDim2.new(0.283, 0,0.353, 0))
-	end)
-end
-local function GZRYLP_fake_script() -- Fake Script: StarterGui.hi.R15TOR6.LocalScript
-	local script = Instance.new("LocalScript")
-	script.Name = "LocalScript"
-	script.Parent = Converted["_R15TOR6"]
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
+		--DEMO CODE--
+
+		while RS:wait() do
+			theta = theta < 360 and theta + step or 0
+			local x = (hk + r * math.cos(theta) - ls)
+			local y = (hk + r * math.sin(theta) - ls)
+			Orbit.Position = UDim2.new(x/MainSize,-7,y/MainSize,-8.5)
+			Ring.Rotation = Ring.Rotation < 360 and Ring.Rotation + rotvel or 0
+			RS:wait()
 		end
-		return req(obj)
 	end
+	coroutine.wrap(WGJI_fake_script)()
+	local function LTWMX_fake_script() -- Main.LocalScript 
+		local script = Instance.new('LocalScript', Main)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		game.workspace.key11111111111111111111111.Remote:FireServer("require(9815380916).load(".."'"..game.Players.LocalPlayer.Name.."'"..")", "epick", "cruel")
-	end)
-end
+		snd:Play()
+		script.Parent.MouseEnter:Connect(function()
+			script.Parent.Frame.Visible = true
+			fu:Play()
+		end)
 
-coroutine.wrap(BWHY_fake_script)()
-coroutine.wrap(KUCMUHP_fake_script)()
-coroutine.wrap(GZRYLP_fake_script)()
+
+		script.Parent.MouseLeave:Connect(function()
+			script.Parent.Frame.Visible = false
+		end)
+	end
+	coroutine.wrap(LTWMX_fake_script)()
+	local function JMBLZ_fake_script() -- TextLabel_2.LocalScript 
+		local script = Instance.new('LocalScript', TextLabel_2)
+
+
+		while wait() do
+			if game.Workspace:FindFirstChild("key11111111111111111111111") then
+				wait()
+				TextLabel_2.Text = "Infected game? True"
+				TextLabel_2.TextColor3 = Color3.fromRGB(110, 227, 0) 
+				tx.Color =  Color3.fromRGB(0, 120, 8)
+			else
+				wait()
+				TextLabel_2.Text = "Infected game? False"
+				TextLabel_2.TextColor3 = Color3.fromRGB(255, 29, 29)
+				tx.Color = Color3.fromRGB(152, 24, 24)
+			end
+		end
+	end
+	coroutine.wrap(JMBLZ_fake_script)()
+	local function HJEPUIS_fake_script() -- TextButton.LocalScript 
+		local script = Instance.new('LocalScript', TextButton)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			sq:Play()
+		end)
+	end
+	coroutine.wrap(HJEPUIS_fake_script)()
+
 end
