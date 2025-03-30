@@ -1,0 +1,97 @@
+-- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
+
+-- Instances:
+
+local Converted = {
+	["_Convert"] = Instance.new("ScreenGui");
+	["_Frame"] = Instance.new("Frame");
+	["_TextBox"] = Instance.new("TextBox");
+	["_TextButton"] = Instance.new("TextButton");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_TextLabel"] = Instance.new("TextLabel");
+}
+
+-- Properties:
+
+Converted["_Convert"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_Convert"].Name = "Convert"
+Converted["_Convert"].Parent = game:GetService("CoreGui")
+
+Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(184.00000423192978, 184.00000423192978, 184.00000423192978)
+Converted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Frame"].BorderSizePixel = 0
+Converted["_Frame"].Position = UDim2.new(0.510504186, 0, 0.336710364, 0)
+Converted["_Frame"].Size = UDim2.new(0.200000003, 0, 0.200000003, 0)
+Converted["_Frame"].Parent = Converted["_Convert"]
+
+Converted["_TextBox"].ClearTextOnFocus = false
+Converted["_TextBox"].CursorPosition = -1
+Converted["_TextBox"].Font = Enum.Font.SourceSans
+Converted["_TextBox"].MultiLine = true
+Converted["_TextBox"].Text = ""
+Converted["_TextBox"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextBox"].TextScaled = true
+Converted["_TextBox"].TextSize = 14
+Converted["_TextBox"].TextWrapped = true
+Converted["_TextBox"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextBox"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextBox"].BorderSizePixel = 0
+Converted["_TextBox"].Position = UDim2.new(4.80844164e-07, 0, 2.27335946e-07, 0)
+Converted["_TextBox"].Size = UDim2.new(0.999999762, 0, 0.757031918, 0)
+Converted["_TextBox"].Parent = Converted["_Frame"]
+
+Converted["_TextButton"].Font = Enum.Font.SourceSans
+Converted["_TextButton"].Text = "Execute converted"
+Converted["_TextButton"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton"].TextScaled = true
+Converted["_TextButton"].TextSize = 14
+Converted["_TextButton"].TextWrapped = true
+Converted["_TextButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton"].BorderSizePixel = 0
+Converted["_TextButton"].Position = UDim2.new(-0.00420129579, 0, 0.816447496, 0)
+Converted["_TextButton"].Size = UDim2.new(0, 191, 0, 24)
+Converted["_TextButton"].Parent = Converted["_Frame"]
+
+Converted["_TextLabel"].Font = Enum.Font.SourceSans
+Converted["_TextLabel"].Text = "Epick converter, Input code from Project epick"
+Converted["_TextLabel"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel"].TextScaled = true
+Converted["_TextLabel"].TextSize = 14
+Converted["_TextLabel"].TextWrapped = true
+Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(150.0000062584877, 150.0000062584877, 150.0000062584877)
+Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel"].BorderSizePixel = 0
+Converted["_TextLabel"].Position = UDim2.new(0, 0, -0.18623361, 0)
+Converted["_TextLabel"].Size = UDim2.new(0, 190, 0, 25)
+Converted["_TextLabel"].Parent = Converted["_Frame"]
+
+-- Fake Module Scripts:
+
+local fake_module_scripts = {}
+
+
+-- Fake Local Scripts:
+
+local function MGAWCOU_fake_script() -- Fake Script: StarterGui.Convert.Frame.TextButton.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_TextButton"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local e = Converted["_TextBox"]
+		print("hi")
+		game.Workspace:FindFirstChild("key11111111111111111111111").Remote:FireServer(e.Text,"hi","invis")
+		print("fired")
+	end)
+end
+
+coroutine.wrap(MGAWCOU_fake_script)()
