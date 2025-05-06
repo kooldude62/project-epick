@@ -1,343 +1,344 @@
 if not game.Players.LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("Peepickgui") then
-local Converted = {
-	["_Peepickgui"] = Instance.new("ScreenGui");
-	["_ImageLabel"] = Instance.new("ImageLabel");
-	["_Info list"] = Instance.new("Frame");
-	["_TextLabel"] = Instance.new("TextLabel");
-	["_LocalScript"] = Instance.new("LocalScript");
-	["_TextLabel1"] = Instance.new("TextLabel");
-	["_LocalScript1"] = Instance.new("LocalScript");
-	["_infected"] = Instance.new("TextLabel");
-	["_LocalScript2"] = Instance.new("LocalScript");
-	["_TextLabel2"] = Instance.new("TextLabel");
-	["_LocalScript3"] = Instance.new("LocalScript");
-	["_infected text"] = Instance.new("TextLabel");
-	["_DASH"] = Instance.new("ImageLabel");
-	["_LocalScript4"] = Instance.new("LocalScript");
-	["_Hover sc"] = Instance.new("LocalScript");
-	["_LocalScript5"] = Instance.new("LocalScript");
-	["_LocalScript6"] = Instance.new("LocalScript");
-	["_DASH CIRCLE MAIN"] = Instance.new("LocalScript");
-	["_dashed circle loader."] = Instance.new("LocalScript");
-}
-
--- Properties:
-Converted["_dashed circle loader."].Enabled = false
-Converted["_Peepickgui"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_Peepickgui"].Name = "Peepickgui"
-Converted["_Peepickgui"].Parent = game.Players.LocalPlayer.PlayerGui
-
-Converted["_ImageLabel"].Image = "rbxassetid://101854654"
-Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel"].BackgroundTransparency = 1
-Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel"].BorderSizePixel = 0
-Converted["_ImageLabel"].Position = UDim2.new(0.0139372805, 0, 0.823008955, 0)
-Converted["_ImageLabel"].Size = UDim2.new(0, 107, 0, 107)
-Converted["_ImageLabel"].Parent = Converted["_Peepickgui"]
-
-Converted["_Info list"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Info list"].BackgroundTransparency = 0.30000001192092896
-Converted["_Info list"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Info list"].BorderSizePixel = 0
-Converted["_Info list"].Position = UDim2.new(1.12149537, 0, -0.0373831764, 0)
-Converted["_Info list"].Size = UDim2.new(0, 219, 0, 114)
-Converted["_Info list"].Visible = false
-Converted["_Info list"].ZIndex = 10000
-Converted["_Info list"].Name = "Info list"
-Converted["_Info list"].Parent = Converted["_ImageLabel"]
-
-Converted["_TextLabel"].Font = Enum.Font.Arial
-Converted["_TextLabel"].Text = "Status : "
-Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel"].TextSize = 23
-Converted["_TextLabel"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel"].BackgroundTransparency = 1
-Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel"].BorderSizePixel = 0
-Converted["_TextLabel"].Position = UDim2.new(-0.0598173812, 0, 0.377175838, 0)
-Converted["_TextLabel"].Size = UDim2.new(0, 194, 0, 25)
-Converted["_TextLabel"].ZIndex = 100001
-Converted["_TextLabel"].Parent = Converted["_Info list"]
-
-Converted["_TextLabel1"].Font = Enum.Font.Arial
-Converted["_TextLabel1"].Text = "Project Epick V5"
-Converted["_TextLabel1"].TextColor3 = Color3.fromRGB(255, 255, 0)
-Converted["_TextLabel1"].TextSize = 27
-Converted["_TextLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel1"].BackgroundTransparency = 1
-Converted["_TextLabel1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel1"].BorderSizePixel = 0
-Converted["_TextLabel1"].Position = UDim2.new(0.0406392403, 0, 0.060606841, 0)
-Converted["_TextLabel1"].Size = UDim2.new(0, 200, 0, 38)
-Converted["_TextLabel1"].ZIndex = 100001
-Converted["_TextLabel1"].Parent = Converted["_Info list"]
-
-Converted["_infected"].Font = Enum.Font.Arial
-Converted["_infected"].Text = "Infected:"
-Converted["_infected"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_infected"].TextSize = 23
-Converted["_infected"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_infected"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_infected"].BackgroundTransparency = 1
-Converted["_infected"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_infected"].BorderSizePixel = 0
-Converted["_infected"].Position = UDim2.new(0.0406392403, 0, 0.602971673, 0)
-Converted["_infected"].Size = UDim2.new(0, 132, 0, 33)
-Converted["_infected"].ZIndex = 100001
-Converted["_infected"].Name = "infected"
-Converted["_infected"].Parent = Converted["_Info list"]
-
-Converted["_TextLabel2"].Font = Enum.Font.Arial
-Converted["_TextLabel2"].Text = "Injected"
-Converted["_TextLabel2"].TextColor3 = Color3.fromRGB(85.0000025331974, 170.0000050663948, 0)
-Converted["_TextLabel2"].TextSize = 23
-Converted["_TextLabel2"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel2"].BackgroundTransparency = 1
-Converted["_TextLabel2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel2"].BorderSizePixel = 0
-Converted["_TextLabel2"].Position = UDim2.new(0.506392658, 0, 0.385947794, 0)
-Converted["_TextLabel2"].Size = UDim2.new(0, 98, 0, 25)
-Converted["_TextLabel2"].ZIndex = 100001
-Converted["_TextLabel2"].Parent = Converted["_Info list"]
-
-Converted["_infected text"].Font = Enum.Font.Arial
-Converted["_infected text"].Text = "text"
-Converted["_infected text"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_infected text"].TextSize = 23
-Converted["_infected text"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_infected text"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_infected text"].BackgroundTransparency = 1
-Converted["_infected text"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_infected text"].BorderSizePixel = 0
-Converted["_infected text"].Position = UDim2.new(0.428767085, 0, 0.602971673, 0)
-Converted["_infected text"].Size = UDim2.new(0, 132, 0, 33)
-Converted["_infected text"].ZIndex = 100001
-Converted["_infected text"].Name = "infected text"
-Converted["_infected text"].Parent = Converted["_Info list"]
-
-Converted["_DASH"].Image = "rbxassetid://10131954007"
-Converted["_DASH"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_DASH"].BackgroundTransparency = 1
-Converted["_DASH"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_DASH"].BorderSizePixel = 0
-Converted["_DASH"].Interactable = false
-Converted["_DASH"].Position = UDim2.new(-0.00475432491, 0, -0.008766816, 0)
-Converted["_DASH"].Size = UDim2.new(0, 107, 0, 107)
-Converted["_DASH"].Visible = false
-Converted["_DASH"].ZIndex = -1
-Converted["_DASH"].Name = "DASH"
-Converted["_DASH"].Parent = Converted["_ImageLabel"]
-
--- Fake Module Scripts:
-
-local fake_module_scripts = {}
-
-
--- Fake Local Scripts:
-
-local function AJERUH_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.Info list.TextLabel.LocalScript
-	local script = Instance.new("LocalScript")
-	script.Name = "LocalScript"
-	script.Parent = Converted["_TextLabel"]
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-
-end
-local function AOEQ_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.Info list.TextLabel.LocalScript
-	local script = Instance.new("LocalScript")
-	script.Name = "LocalScript"
-	script.Parent = Converted["_TextLabel1"]
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	local textLabel = script.Parent
-
-	local speed = 1.3
-
-	while true do
-		for hue = 0, 1, 0.01 do
-			textLabel.TextColor3 = Color3.fromHSV(hue, 1, 1)
-			wait(0.03 / speed)
-		end
-	end
-
-
-
-end
-local function AXCI_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.Info list.infected.LocalScript
-	local script = Instance.new("LocalScript")
-	script.Name = "LocalScript"
-	script.Parent = Converted["_infected"]
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	while task.wait() do
-		if game.Workspace:FindFirstChild("stigymaa") and game.Workspace:FindFirstChild("stigymaa"):FindFirstChild("stigre") then
-			script.Parent.Parent["infected text"].Text = "True"
-			script.Parent.Parent["infected text"].TextColor3 = Color3.new(0.384314, 1, 0)
-		else
-			script.Parent.Parent["infected text"].Text = "False"
-			script.Parent.Parent["infected text"].TextColor3 = Color3.new(1, 0, 0)
-		end
-	end
-end
-local function GRTR_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.Info list.TextLabel.LocalScript
-	local script = Instance.new("LocalScript")
-	script.Name = "LocalScript"
-	script.Parent = Converted["_TextLabel2"]
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-
-end
-local function WFIG_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.LocalScript
-	local script = Instance.new("LocalScript")
-	script.Name = "LocalScript"
-	script.Parent = Converted["_ImageLabel"]
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	local TweenService = game:GetService("TweenService")
-	local imageLabel = script.Parent
-
-	local assetIds = {
-		96174918368775,
-		117555866533851,
-		109587943866660,
-		135809672464194,
-		70617395524364,
-		92145764665865,
-		132190212161633,
-		135715935095139,
-		125757308820721,
-		140114862066583,
-		75429824027906
+	local Converted = {
+		["_Peepickgui"] = Instance.new("ScreenGui");
+		["_ImageLabel"] = Instance.new("ImageLabel");
+		["_Info list"] = Instance.new("Frame");
+		["_TextLabel"] = Instance.new("TextLabel");
+		["_LocalScript"] = Instance.new("LocalScript");
+		["_TextLabel1"] = Instance.new("TextLabel");
+		["_LocalScript1"] = Instance.new("LocalScript");
+		["_infected"] = Instance.new("TextLabel");
+		["_LocalScript2"] = Instance.new("LocalScript");
+		["_TextLabel2"] = Instance.new("TextLabel");
+		["_LocalScript3"] = Instance.new("LocalScript");
+		["_infected text"] = Instance.new("TextLabel");
+		["_DASH"] = Instance.new("ImageLabel");
+		["_LocalScript4"] = Instance.new("LocalScript");
+		["_Hover sc"] = Instance.new("LocalScript");
+		["_LocalScript5"] = Instance.new("LocalScript");
+		["_LocalScript6"] = Instance.new("LocalScript");
+		["_DASH CIRCLE MAIN"] = Instance.new("LocalScript");
+		["_dashed circle loader."] = Instance.new("LocalScript");
 	}
 
-	local prefix = "rbxassetid://"
+	-- Properties:
+	Converted["_Peepickgui"].ResetOnSpawn = false
+	Converted["_dashed circle loader."].Enabled = false
+	Converted["_Peepickgui"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	Converted["_Peepickgui"].Name = "Peepickgui"
+	Converted["_Peepickgui"].Parent = game.Players.LocalPlayer.PlayerGui
 
-	local tweenInfoFadeOut = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-	local tweenInfoFadeIn = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+	Converted["_ImageLabel"].Image = "rbxassetid://101854654"
+	Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_ImageLabel"].BackgroundTransparency = 1
+	Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Converted["_ImageLabel"].BorderSizePixel = 0
+	Converted["_ImageLabel"].Position = UDim2.new(0.0139372805, 0, 0.823008955, 0)
+	Converted["_ImageLabel"].Size = UDim2.new(0, 107, 0, 107)
+	Converted["_ImageLabel"].Parent = Converted["_Peepickgui"]
 
-	local fadeOut = TweenService:Create(imageLabel, tweenInfoFadeOut, { ImageTransparency = 1 })
-	local fadeIn = TweenService:Create(imageLabel, tweenInfoFadeIn, { ImageTransparency = 0 })
+	Converted["_Info list"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Converted["_Info list"].BackgroundTransparency = 0.30000001192092896
+	Converted["_Info list"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Converted["_Info list"].BorderSizePixel = 0
+	Converted["_Info list"].Position = UDim2.new(1.12149537, 0, -0.0373831764, 0)
+	Converted["_Info list"].Size = UDim2.new(0, 219, 0, 114)
+	Converted["_Info list"].Visible = false
+	Converted["_Info list"].ZIndex = 10000
+	Converted["_Info list"].Name = "Info list"
+	Converted["_Info list"].Parent = Converted["_ImageLabel"]
 
-	while true do
-		for _, id in ipairs(assetIds) do
-			fadeOut:Play()
-			fadeOut.Completed:Wait()
-			imageLabel.Image = prefix .. id
-			fadeIn:Play()
-			fadeIn.Completed:Wait()
-			wait(3.65)
+	Converted["_TextLabel"].Font = Enum.Font.Arial
+	Converted["_TextLabel"].Text = "Status : "
+	Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_TextLabel"].TextSize = 23
+	Converted["_TextLabel"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_TextLabel"].BackgroundTransparency = 1
+	Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Converted["_TextLabel"].BorderSizePixel = 0
+	Converted["_TextLabel"].Position = UDim2.new(-0.0598173812, 0, 0.377175838, 0)
+	Converted["_TextLabel"].Size = UDim2.new(0, 194, 0, 25)
+	Converted["_TextLabel"].ZIndex = 100001
+	Converted["_TextLabel"].Parent = Converted["_Info list"]
+
+	Converted["_TextLabel1"].Font = Enum.Font.Arial
+	Converted["_TextLabel1"].Text = "Project Epick V5"
+	Converted["_TextLabel1"].TextColor3 = Color3.fromRGB(255, 255, 0)
+	Converted["_TextLabel1"].TextSize = 27
+	Converted["_TextLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_TextLabel1"].BackgroundTransparency = 1
+	Converted["_TextLabel1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Converted["_TextLabel1"].BorderSizePixel = 0
+	Converted["_TextLabel1"].Position = UDim2.new(0.0406392403, 0, 0.060606841, 0)
+	Converted["_TextLabel1"].Size = UDim2.new(0, 200, 0, 38)
+	Converted["_TextLabel1"].ZIndex = 100001
+	Converted["_TextLabel1"].Parent = Converted["_Info list"]
+
+	Converted["_infected"].Font = Enum.Font.Arial
+	Converted["_infected"].Text = "Infected:"
+	Converted["_infected"].TextColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_infected"].TextSize = 23
+	Converted["_infected"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_infected"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_infected"].BackgroundTransparency = 1
+	Converted["_infected"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Converted["_infected"].BorderSizePixel = 0
+	Converted["_infected"].Position = UDim2.new(0.0406392403, 0, 0.602971673, 0)
+	Converted["_infected"].Size = UDim2.new(0, 132, 0, 33)
+	Converted["_infected"].ZIndex = 100001
+	Converted["_infected"].Name = "infected"
+	Converted["_infected"].Parent = Converted["_Info list"]
+
+	Converted["_TextLabel2"].Font = Enum.Font.Arial
+	Converted["_TextLabel2"].Text = "Injected"
+	Converted["_TextLabel2"].TextColor3 = Color3.fromRGB(85.0000025331974, 170.0000050663948, 0)
+	Converted["_TextLabel2"].TextSize = 23
+	Converted["_TextLabel2"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_TextLabel2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_TextLabel2"].BackgroundTransparency = 1
+	Converted["_TextLabel2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Converted["_TextLabel2"].BorderSizePixel = 0
+	Converted["_TextLabel2"].Position = UDim2.new(0.506392658, 0, 0.385947794, 0)
+	Converted["_TextLabel2"].Size = UDim2.new(0, 98, 0, 25)
+	Converted["_TextLabel2"].ZIndex = 100001
+	Converted["_TextLabel2"].Parent = Converted["_Info list"]
+
+	Converted["_infected text"].Font = Enum.Font.Arial
+	Converted["_infected text"].Text = "text"
+	Converted["_infected text"].TextColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_infected text"].TextSize = 23
+	Converted["_infected text"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_infected text"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_infected text"].BackgroundTransparency = 1
+	Converted["_infected text"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Converted["_infected text"].BorderSizePixel = 0
+	Converted["_infected text"].Position = UDim2.new(0.428767085, 0, 0.602971673, 0)
+	Converted["_infected text"].Size = UDim2.new(0, 132, 0, 33)
+	Converted["_infected text"].ZIndex = 100001
+	Converted["_infected text"].Name = "infected text"
+	Converted["_infected text"].Parent = Converted["_Info list"]
+
+	Converted["_DASH"].Image = "rbxassetid://10131954007"
+	Converted["_DASH"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Converted["_DASH"].BackgroundTransparency = 1
+	Converted["_DASH"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Converted["_DASH"].BorderSizePixel = 0
+	Converted["_DASH"].Interactable = false
+	Converted["_DASH"].Position = UDim2.new(-0.00475432491, 0, -0.008766816, 0)
+	Converted["_DASH"].Size = UDim2.new(0, 107, 0, 107)
+	Converted["_DASH"].Visible = false
+	Converted["_DASH"].ZIndex = -1
+	Converted["_DASH"].Name = "DASH"
+	Converted["_DASH"].Parent = Converted["_ImageLabel"]
+
+	-- Fake Module Scripts:
+
+	local fake_module_scripts = {}
+
+
+	-- Fake Local Scripts:
+
+	local function AJERUH_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.Info list.TextLabel.LocalScript
+		local script = Instance.new("LocalScript")
+		script.Name = "LocalScript"
+		script.Parent = Converted["_TextLabel"]
+		local req = require
+		local require = function(obj)
+			local fake = fake_module_scripts[obj]
+			if fake then
+				return fake()
+			end
+			return req(obj)
+		end
+
+
+	end
+	local function AOEQ_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.Info list.TextLabel.LocalScript
+		local script = Instance.new("LocalScript")
+		script.Name = "LocalScript"
+		script.Parent = Converted["_TextLabel1"]
+		local req = require
+		local require = function(obj)
+			local fake = fake_module_scripts[obj]
+			if fake then
+				return fake()
+			end
+			return req(obj)
+		end
+
+		local textLabel = script.Parent
+
+		local speed = 1.3
+
+		while true do
+			for hue = 0, 1, 0.01 do
+				textLabel.TextColor3 = Color3.fromHSV(hue, 1, 1)
+				wait(0.03 / speed)
+			end
+		end
+
+
+
+	end
+	local function AXCI_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.Info list.infected.LocalScript
+		local script = Instance.new("LocalScript")
+		script.Name = "LocalScript"
+		script.Parent = Converted["_infected"]
+		local req = require
+		local require = function(obj)
+			local fake = fake_module_scripts[obj]
+			if fake then
+				return fake()
+			end
+			return req(obj)
+		end
+
+		while task.wait() do
+			if game.Workspace:FindFirstChild("stigymaa") and game.Workspace:FindFirstChild("stigymaa"):FindFirstChild("stigre") then
+				script.Parent.Parent["infected text"].Text = "True"
+				script.Parent.Parent["infected text"].TextColor3 = Color3.new(0.384314, 1, 0)
+			else
+				script.Parent.Parent["infected text"].Text = "False"
+				script.Parent.Parent["infected text"].TextColor3 = Color3.new(1, 0, 0)
+			end
 		end
 	end
-
-end
-local function JXGS_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.Hover sc
-	local script = Instance.new("LocalScript")
-	script.Name = "Hover sc"
-	script.Parent = Converted["_ImageLabel"]
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
+	local function GRTR_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.Info list.TextLabel.LocalScript
+		local script = Instance.new("LocalScript")
+		script.Name = "LocalScript"
+		script.Parent = Converted["_TextLabel2"]
+		local req = require
+		local require = function(obj)
+			local fake = fake_module_scripts[obj]
+			if fake then
+				return fake()
+			end
+			return req(obj)
 		end
-		return req(obj)
+
+
 	end
+	local function WFIG_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.LocalScript
+		local script = Instance.new("LocalScript")
+		script.Name = "LocalScript"
+		script.Parent = Converted["_ImageLabel"]
+		local req = require
+		local require = function(obj)
+			local fake = fake_module_scripts[obj]
+			if fake then
+				return fake()
+			end
+			return req(obj)
+		end
 
-	local imageLabel = script.Parent
-	local infoList = imageLabel:WaitForChild("Info list")
+		local TweenService = game:GetService("TweenService")
+		local imageLabel = script.Parent
 
-	infoList.Visible = false
+		local assetIds = {
+			96174918368775,
+			117555866533851,
+			109587943866660,
+			135809672464194,
+			70617395524364,
+			92145764665865,
+			132190212161633,
+			135715935095139,
+			125757308820721,
+			140114862066583,
+			75429824027906
+		}
 
-	imageLabel.MouseEnter:Connect(function()
-		infoList.Visible = true
-	end)
+		local prefix = "rbxassetid://"
 
-	imageLabel.MouseLeave:Connect(function()
+		local tweenInfoFadeOut = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local tweenInfoFadeIn = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+
+		local fadeOut = TweenService:Create(imageLabel, tweenInfoFadeOut, { ImageTransparency = 1 })
+		local fadeIn = TweenService:Create(imageLabel, tweenInfoFadeIn, { ImageTransparency = 0 })
+
+		while true do
+			for _, id in ipairs(assetIds) do
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				imageLabel.Image = prefix .. id
+				fadeIn:Play()
+				fadeIn.Completed:Wait()
+				wait(3.65)
+			end
+		end
+
+	end
+	local function JXGS_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.Hover sc
+		local script = Instance.new("LocalScript")
+		script.Name = "Hover sc"
+		script.Parent = Converted["_ImageLabel"]
+		local req = require
+		local require = function(obj)
+			local fake = fake_module_scripts[obj]
+			if fake then
+				return fake()
+			end
+			return req(obj)
+		end
+
+		local imageLabel = script.Parent
+		local infoList = imageLabel:WaitForChild("Info list")
+
 		infoList.Visible = false
-	end)
-end
-local function IAZLYJ_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.LocalScript
-	local script = Instance.new("LocalScript")
-	script.Name = "LocalScript"
-	script.Parent = Converted["_ImageLabel"]
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
+
+		imageLabel.MouseEnter:Connect(function()
+			infoList.Visible = true
+		end)
+
+		imageLabel.MouseLeave:Connect(function()
+			infoList.Visible = false
+		end)
+	end
+	local function IAZLYJ_fake_script() -- Fake Script: ServerStorage.Peepickgui.ImageLabel.LocalScript
+		local script = Instance.new("LocalScript")
+		script.Name = "LocalScript"
+		script.Parent = Converted["_ImageLabel"]
+		local req = require
+		local require = function(obj)
+			local fake = fake_module_scripts[obj]
+			if fake then
+				return fake()
+			end
+			return req(obj)
 		end
-		return req(obj)
-	end
 
-	while wait() do
-		script.Parent.Rotation = math.sin(tick()*3)
-	end
-end
-local function FFXXEQ_fake_script() -- Fake Script: ServerStorage.Peepickgui.LocalScript
-	local script = Instance.new("LocalScript")
-	script.Name = "LocalScript"
-	script.Parent = Converted["_Peepickgui"]
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	while wait() do
-		if game:FindFirstChild("") then
-
+		while wait() do
+			script.Parent.Rotation = math.sin(tick()*3)
 		end
 	end
-end
-local function KNJJJ_fake_script() -- Fake Script: ServerStorage.Peepickgui.DASH CIRCLE MAIN
-while wait( )do
-	fakeer(Converted["_DASH"]:Clone())
-		wait(.5) 
-end
-end
+	local function FFXXEQ_fake_script() -- Fake Script: ServerStorage.Peepickgui.LocalScript
+		local script = Instance.new("LocalScript")
+		script.Name = "LocalScript"
+		script.Parent = Converted["_Peepickgui"]
+		local req = require
+		local require = function(obj)
+			local fake = fake_module_scripts[obj]
+			if fake then
+				return fake()
+			end
+			return req(obj)
+		end
 
-function fakeer(dc) -- Fake Script: ServerStorage.Peepickgui.DASH CIRCLE MAIN
+		while wait() do
+			if game:FindFirstChild("") then
+
+			end
+		end
+	end
+	local function KNJJJ_fake_script() -- Fake Script: ServerStorage.Peepickgui.DASH CIRCLE MAIN
+		while wait( )do
+			fakeer(Converted["_DASH"]:Clone())
+			wait(.5) 
+		end
+	end
+
+	function fakeer(dc) -- Fake Script: ServerStorage.Peepickgui.DASH CIRCLE MAIN
 		local rr = dc
 		rr.Visible = true
 		rr.Parent = Converted["_ImageLabel"]
@@ -365,14 +366,14 @@ function fakeer(dc) -- Fake Script: ServerStorage.Peepickgui.DASH CIRCLE MAIN
 		end
 		ee:Destroy()
 
-end
-coroutine.wrap(AJERUH_fake_script)()
-coroutine.wrap(AOEQ_fake_script)()
-coroutine.wrap(AXCI_fake_script)()
-coroutine.wrap(GRTR_fake_script)()
-coroutine.wrap(WFIG_fake_script)()
-coroutine.wrap(JXGS_fake_script)()
-coroutine.wrap(IAZLYJ_fake_script)()
-coroutine.wrap(FFXXEQ_fake_script)()
-coroutine.wrap(KNJJJ_fake_script)()
+	end
+	coroutine.wrap(AJERUH_fake_script)()
+	coroutine.wrap(AOEQ_fake_script)()
+	coroutine.wrap(AXCI_fake_script)()
+	coroutine.wrap(GRTR_fake_script)()
+	coroutine.wrap(WFIG_fake_script)()
+	coroutine.wrap(JXGS_fake_script)()
+	coroutine.wrap(IAZLYJ_fake_script)()
+	coroutine.wrap(FFXXEQ_fake_script)()
+	coroutine.wrap(KNJJJ_fake_script)()
 end
