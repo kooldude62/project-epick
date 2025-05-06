@@ -1,133 +1,264 @@
-if not game.Players.LocalPlayer:FindFirstChild("PlayerGui"):FindFirstChild("stigymaa") then
-	local Converted = {
-		["_stigymaa"] = Instance.new("ScreenGui");
-		["_LocalScript"] = Instance.new("LocalScript");
-		["_os"] = Instance.new("StringValue");
-		["_datag2"] = Instance.new("GuiMain");
-		["_Main"] = Instance.new("ImageLabel");
-		["_Orbit"] = Instance.new("ImageLabel");
-		["_Ring"] = Instance.new("ImageLabel");
-		["_Orbi"] = Instance.new("LocalScript");
-	}
+-- Gui to Lua
+-- Version: 3.2
 
-	-- Properties:
+-- Instances:
 
-	Converted["_stigymaa"].ResetOnSpawn = false
-	Converted["_stigymaa"].Name = "stigymaa"
-	Converted["_stigymaa"].Parent = game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+local ScreenGui = Instance.new("ScreenGui")
+local ImageLabel = Instance.new("ImageLabel")
+local Infolist = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local infected = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local infectedtext = Instance.new("TextLabel")
+local DASH = Instance.new("ImageLabel")
 
-	Converted["_os"].Value = "wergwrefgewrgewrger"
-	Converted["_os"].Name = "os"
-	Converted["_os"].Parent = Converted["_stigymaa"]
+--Properties:
 
-	Converted["_datag2"].DisplayOrder = 999
-	Converted["_datag2"].ResetOnSpawn = false
-	Converted["_datag2"].Name = "datag2"
-	Converted["_datag2"].Parent = Converted["_stigymaa"]
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-	Converted["_Main"].Image = "rbxassetid://101854654"
-	Converted["_Main"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Converted["_Main"].BackgroundTransparency = 1
-	Converted["_Main"].BorderColor3 = Color3.fromRGB(27, 42, 53)
-	Converted["_Main"].Position = UDim2.new(0.5, -2000, 0.5, -50)
-	Converted["_Main"].Size = UDim2.new(0, 100, 0, 100)
-	Converted["_Main"].Name = "Main"
-	Converted["_Main"].Parent = Converted["_datag2"]
+ImageLabel.Parent = ScreenGui
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.0139372805, 0, 0.823008955, 0)
+ImageLabel.Size = UDim2.new(0, 107, 0, 107)
+ImageLabel.Image = "rbxassetid://101854654"
 
-	Converted["_Orbit"].Image = "http://www.roblox.com/asset/?id=7101990169"
-	Converted["_Orbit"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Converted["_Orbit"].BackgroundTransparency = 1
-	Converted["_Orbit"].BorderColor3 = Color3.fromRGB(27, 42, 53)
-	Converted["_Orbit"].Size = UDim2.new(0.17, 0, 0.17, 0)
-	Converted["_Orbit"].ZIndex = 2
-	Converted["_Orbit"].Name = "Orbit"
-	Converted["_Orbit"].Parent = Converted["_Main"]
+Infolist.Name = "Info list"
+Infolist.Parent = ImageLabel
+Infolist.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Infolist.BackgroundTransparency = 0.300
+Infolist.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Infolist.BorderSizePixel = 0
+Infolist.Position = UDim2.new(1.12149537, 0, -0.0373831764, 0)
+Infolist.Size = UDim2.new(0, 219, 0, 114)
+Infolist.Visible = false
+Infolist.ZIndex = 10000
 
-	Converted["_Ring"].Image = "rbxassetid://7102118272"
-	Converted["_Ring"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Converted["_Ring"].BackgroundTransparency = 1
-	Converted["_Ring"].BorderColor3 = Color3.fromRGB(27, 42, 53)
-	Converted["_Ring"].Size = UDim2.new(1, 0, 1, 0)
-	Converted["_Ring"].Name = "Ring"
-	Converted["_Ring"].Parent = Converted["_Main"]
+TextLabel.Parent = Infolist
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.0598173812, 0, 0.377175838, 0)
+TextLabel.Size = UDim2.new(0, 194, 0, 25)
+TextLabel.ZIndex = 100001
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "Status : "
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 23.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-	-- Fake Module Scripts:
-	local fake_module_scripts = {}
+TextLabel_2.Parent = Infolist
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0406392403, 0, 0.060606841, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 38)
+TextLabel_2.ZIndex = 100001
+TextLabel_2.Font = Enum.Font.Arial
+TextLabel_2.Text = "Project Epick V5"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel_2.TextSize = 27.000
 
-	-- Fake Local Scripts:
+infected.Name = "infected"
+infected.Parent = Infolist
+infected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infected.BackgroundTransparency = 1.000
+infected.BorderColor3 = Color3.fromRGB(0, 0, 0)
+infected.BorderSizePixel = 0
+infected.Position = UDim2.new(0.0406392403, 0, 0.602971673, 0)
+infected.Size = UDim2.new(0, 132, 0, 33)
+infected.ZIndex = 100001
+infected.Font = Enum.Font.Arial
+infected.Text = "Infected:"
+infected.TextColor3 = Color3.fromRGB(255, 255, 255)
+infected.TextSize = 23.000
+infected.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-	local function CXOR_fake_script()
-		local script = Instance.new("LocalScript")
-		script.Name = "Orbi"
-		script.Parent = Converted["_datag2"]
-		local req = require
-		local require = function(obj)
-			local fake = fake_module_scripts[obj]
-			if fake then
-				return fake()
-			end
-			return req(obj)
-		end
+TextLabel_3.Parent = Infolist
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.506392658, 0, 0.385947794, 0)
+TextLabel_3.Size = UDim2.new(0, 98, 0, 25)
+TextLabel_3.ZIndex = 100001
+TextLabel_3.Font = Enum.Font.Arial
+TextLabel_3.Text = "Injected"
+TextLabel_3.TextColor3 = Color3.fromRGB(85, 170, 0)
+TextLabel_3.TextSize = 23.000
+TextLabel_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-		local Main = script.Parent.Main
-		local Orbit = Main.Orbit
-		local Ring = Main.Ring
+infectedtext.Name = "infected text"
+infectedtext.Parent = Infolist
+infectedtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infectedtext.BackgroundTransparency = 1.000
+infectedtext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+infectedtext.BorderSizePixel = 0
+infectedtext.Position = UDim2.new(0.428767085, 0, 0.602971673, 0)
+infectedtext.Size = UDim2.new(0, 132, 0, 33)
+infectedtext.ZIndex = 100001
+infectedtext.Font = Enum.Font.Arial
+infectedtext.Text = "text"
+infectedtext.TextColor3 = Color3.fromRGB(255, 255, 255)
+infectedtext.TextSize = 23.000
+infectedtext.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-		local RS = game:GetService("RunService").Heartbeat
-		local Tween = game:GetService("TweenService")
-		local WaitTime = 0.25
-		local LoadInfo = TweenInfo.new(WaitTime,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0)
-		local FlashInfo = TweenInfo.new(WaitTime,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,1,true,0)
-		local hk = Main.AbsoluteSize.X/2
-		local MainSize = Main.AbsoluteSize.X
-		local ls = Orbit.AbsoluteSize.X/2
-		local r = hk
-		local theta = 0
-		local step = (2*math.pi)/450
-		local rotvel = 0.35
-		local StepInstance = Instance.new("NumberValue")
-		local RotInstance = Instance.new("NumberValue")
-		StepInstance.Changed:Connect(function()
-			step = StepInstance.Value
-		end)
-		RotInstance.Changed:Connect(function()
-			rotvel = RotInstance.Value
-		end)
+DASH.Name = "DASH"
+DASH.Parent = ImageLabel
+DASH.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DASH.BackgroundTransparency = 1.000
+DASH.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DASH.BorderSizePixel = 0
+DASH.Position = UDim2.new(-0.00475432491, 0, -0.008766816, 0)
+DASH.Size = UDim2.new(0, 107, 0, 107)
+DASH.Visible = false
+DASH.ZIndex = -1
+DASH.Image = "rbxassetid://10131954007"
 
-		local Modes = {
-			Tween:Create(StepInstance,LoadInfo,{Value=(2*math.pi)/180}),
-			Tween:Create(StepInstance,LoadInfo,{Value=(2*math.pi)/450}),
-			Tween:Create(RotInstance,LoadInfo,{Value=1}),
-			Tween:Create(RotInstance,LoadInfo,{Value=0.35}),
-		}
+-- Scripts:
 
-		spawn(function()
-			local hi = script.Parent.Main
-			hi:TweenPosition(UDim2.new(0.5, -50,0.5, -50), Enum.EasingDirection.In)
-			wait(3)
-			hi:TweenPosition(UDim2.new(0, 12,1, -115), Enum.EasingDirection.Out)
-			game:GetService("Players").LocalPlayer.Chatted:Connect(function(agg)
-				pcall(function()
-					if agg == '/e hidemeh' then
-						hi.Visible = not hi.Visible
-					end
-				end)
-			end)
-		end)
+local function NSWD_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
 
-		Modes[1]:Play()
-		wait(math.random(1,3))
-		Modes[2]:Play()
-		Modes[4]:Play()
+	
+end
+coroutine.wrap(NSWD_fake_script)()
+local function WKWJE_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
 
-		while RS:Wait() do
-			theta = theta < 360 and theta + step or 0
-			local x = (hk + r * math.cos(theta) - ls)
-			local y = (hk + r * math.sin(theta) - ls)
-			Orbit.Position = UDim2.new(x/MainSize,0,y/MainSize,0)
-			Ring.Rotation = Ring.Rotation < 360 and Ring.Rotation + rotvel or 0
+	local textLabel = script.Parent
+	
+	local speed = 1.3
+	
+	while true do
+		for hue = 0, 1, 0.01 do
+			textLabel.TextColor3 = Color3.fromHSV(hue, 1, 1)
+			wait(0.03 / speed)
 		end
 	end
-
-	coroutine.wrap(CXOR_fake_script)()
+	
+	
+	
 end
+coroutine.wrap(WKWJE_fake_script)()
+local function XASNBP_fake_script() -- infected.LocalScript 
+	local script = Instance.new('LocalScript', infected)
+
+	while task.wait() do
+		if game.Workspace:FindFirstChild("stigymaa") and game.Workspace:FindFirstChild("stigymaa"):FindFirstChild("stigre") then
+			script.Parent.Parent["infected text"].Text = "True"
+			script.Parent.Parent["infected text"].TextColor3 = Color3.new(0.384314, 1, 0)
+		else
+			script.Parent.Parent["infected text"].Text = "False"
+			script.Parent.Parent["infected text"].TextColor3 = Color3.new(1, 0, 0)
+		end
+	end
+end
+coroutine.wrap(XASNBP_fake_script)()
+local function LXTF_fake_script() -- TextLabel_3.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_3)
+
+	
+end
+coroutine.wrap(LXTF_fake_script)()
+local function DECRJ_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local TweenService = game:GetService("TweenService")
+	local imageLabel = script.Parent
+	
+	local assetIds = {
+		96174918368775,
+		117555866533851,
+		109587943866660,
+		135809672464194,
+		70617395524364,
+		92145764665865,
+		132190212161633,
+		135715935095139,
+		125757308820721,
+		140114862066583,
+		75429824027906
+	}
+	
+	local prefix = "rbxassetid://"
+	
+	local tweenInfoFadeOut = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local tweenInfoFadeIn = TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+	
+	local fadeOut = TweenService:Create(imageLabel, tweenInfoFadeOut, { ImageTransparency = 1 })
+	local fadeIn = TweenService:Create(imageLabel, tweenInfoFadeIn, { ImageTransparency = 0 })
+	
+	while true do
+		for _, id in ipairs(assetIds) do
+			fadeOut:Play()
+			fadeOut.Completed:Wait()
+			imageLabel.Image = prefix .. id
+			fadeIn:Play()
+			fadeIn.Completed:Wait()
+			wait(1.18)
+		end
+	end
+	
+end
+coroutine.wrap(DECRJ_fake_script)()
+local function DBJVE_fake_script() -- ImageLabel.Hover sc 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local imageLabel = script.Parent
+	local infoList = imageLabel:WaitForChild("Info list")
+	
+	infoList.Visible = false
+	
+	imageLabel.MouseEnter:Connect(function()
+		infoList.Visible = true
+	end)
+	
+	imageLabel.MouseLeave:Connect(function()
+		infoList.Visible = false
+	end)
+end
+coroutine.wrap(DBJVE_fake_script)()
+local function MJJODV_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	while wait() do
+		script.Parent.Rotation = math.sin(tick()*3)
+	end
+end
+coroutine.wrap(MJJODV_fake_script)()
+local function EXIYA_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	while wait() do
+		if game:FindFirstChild("") then
+			
+		end
+	end
+end
+coroutine.wrap(EXIYA_fake_script)()
+local function RFIH_fake_script() -- ScreenGui.DASH CIRCLE MAIN 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local dashedc = script.Parent.ImageLabel.DASH
+	
+	while wait(1.5) do
+		local dc = script.Parent.ImageLabel.DASH:Clone()
+		dc.Visible = true
+		dc.Parent = script.Parent.ImageLabel
+		print("test1")
+		local e = script["dashed circle loader."]:Clone()
+		e.Parent = dc
+		e.Enabled = true
+		print("test2")
+	end
+	
+end
+coroutine.wrap(RFIH_fake_script)()
+-- nil.dashed circle loader. is disabled.
